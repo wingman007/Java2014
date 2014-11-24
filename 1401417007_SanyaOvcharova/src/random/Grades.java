@@ -128,5 +128,7 @@ public class Grades {
 		return eval;
 
 	}
+	
+	//TODO data validation/normalization
 
 }
