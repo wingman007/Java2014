@@ -1,6 +1,9 @@
 package random;
 
 import java.util.Scanner;
+import java.io.InputStreamReader;
+import java.io.BufferedReader;
+import java.io.IOException;
 
 public class Grades {
 
@@ -19,9 +22,13 @@ public class Grades {
 			float grade = myProgram.determineGrade(maxScore, score1);
 			System.out.printf("The grade is %.2f", grade);
 			System.out.println();
-			String partyBreaker = myScanner.nextLine();
-			if (partyBreaker.equals("exit")) {
-				break;
+			try {
+				if (!myProgram.partyBreaker()) {
+					break;
+				}
+			} catch (Exception e) {
+				System.err.println("Error");
+				e.printStackTrace();
 			}
 
 		}
@@ -93,6 +100,21 @@ public class Grades {
 			result += input;
 		}
 		return result;
+
+	}
+
+	public boolean partyBreaker() throws IOException {
+		boolean eval = true;
+		System.out.println("Would you like to continue: ");
+
+		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+
+		String response = br.readLine();
+		System.out.println("Thank you for using our system!");
+		if (response.equals("exit")) {
+			eval = false;
+		}
+		return eval;
 
 	}
 
