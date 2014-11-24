@@ -2,8 +2,6 @@ package random;
 
 import java.util.Scanner;
 
-
-
 public class Grades {
 
 	static Scanner myScanner = new Scanner(System.in);
@@ -13,7 +11,7 @@ public class Grades {
 
 		Grades myProgram = new Grades();
 		while (true) {
-			
+
 			float score1 = myProgram.add(myScanner);
 			System.out.println(score1);
 			int maxScore = myProgram.getMaxScore(myScanner);
@@ -22,12 +20,10 @@ public class Grades {
 			System.out.printf("The grade is %.2f", grade);
 			System.out.println();
 			String partyBreaker = myScanner.nextLine();
-			if(partyBreaker.equals("exit")){
+			if (partyBreaker.equals("exit")) {
 				break;
 			}
-			
-		
-			
+
 		}
 
 	}
@@ -35,6 +31,10 @@ public class Grades {
 	/**
 	 * Calculate grade
 	 * 
+	 * @param int
+	 * @param int
+	 * 
+	 * @return float
 	 */
 	public float determineGrade(int maxPoints, float score) {
 
@@ -47,7 +47,7 @@ public class Grades {
 	 * get maximum score from user input
 	 * 
 	 * @param getScore
-	 * @return
+	 * @return int
 	 */
 
 	public int getMaxScore(Scanner getScore) {
@@ -63,7 +63,7 @@ public class Grades {
 	 * 
 	 * @param Scanner
 	 *            getScore
-	 * @return
+	 * @return float
 	 */
 
 	public float getStudentScore(Scanner getScore) {
@@ -79,7 +79,7 @@ public class Grades {
 	 * 
 	 * @param Scanner
 	 *            getScore
-	 * @return
+	 * @return float
 	 */
 
 	public float add(Scanner getScore) {
