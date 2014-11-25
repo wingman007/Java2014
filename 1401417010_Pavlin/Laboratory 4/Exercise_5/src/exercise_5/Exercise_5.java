@@ -15,23 +15,21 @@ public class Exercise_5 {
         }
         
         else {
-            
-            return factorialRecursion(n-1)*n;
-            
+            return n*factorialRecursion(n-1);
         }
     }
     
     public static int factorialCycle(int n) {
 
         int result = 1;
-
+        
+        // factorial 2! = 2*1
         for (int i = 2; i <= n; i++) {
             
+            // n! = n*(n-1)
             result *= i;
-
         }
 
         return result;
-
     } 
 }
