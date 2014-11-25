@@ -4,7 +4,7 @@ public class Exercise_11 {
 
     public static void main(String[] args) {
         
-        for (int i = 0; i <= 40; i++) {
+        for (int i = 0; i <= 20; i++) {
             System.out.println("Number: " + i + " -- " + "Fibonacci: " + fibonacci(i));
         }
         
@@ -16,7 +16,7 @@ public class Exercise_11 {
             return 0;
         }
         
-        else if(n <= 2) {
+        else if(n == 1 || n == 2) { 
             return 1;
         }
         
