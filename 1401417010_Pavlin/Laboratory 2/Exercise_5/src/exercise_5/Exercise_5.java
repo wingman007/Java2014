@@ -8,13 +8,13 @@ public class Exercise_5 {
         
         Scanner input = new Scanner(System.in);
         
-        System.out.println("Enter Number 1: ");
+        System.out.print("Enter Number 1: ");
         int number1 = input.nextInt();
         
-        System.out.println("Enter Number 2: "); 
+        System.out.print("Enter Number 2: "); 
         int number2 = input.nextInt();
         
-        System.out.println("Enter Number 3: ");
+        System.out.print("Enter Number 3: ");
         int number3 = input.nextInt();
         
         System.out.println("Max number is " + maxNumber(number1, number2, number3));
