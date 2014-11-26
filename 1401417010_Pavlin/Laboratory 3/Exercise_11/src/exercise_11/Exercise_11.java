@@ -6,18 +6,16 @@ public class Exercise_11 {
         
         for (int i = 0; i <= 20; i++) {
             System.out.println("Number: " + i + " -- " + "Fibonacci: " + fibonacci(i));
-        }
-        
+        }  
     }
     
     public static int fibonacci(int n) {
         
-        if(n == 0) {
-            return 0;
-        }
-        
-        else if(n == 1 || n == 2) { 
-            return 1;
+        // Fibonacci 0      = 0
+        // Fibonacci 1      = 1
+        // Fibonacci n > 1  = F(n - 1) + F(n - 2)
+        if(n < 2) {
+            return n;
         }
         
         else {

@@ -10,7 +10,9 @@ public class Exercise_5 {
     
     public static int factorialRecursion(int n) {
         
-        if(n == 0) {
+        // 0! = 1 
+        // 1! = 1
+        if(n <= 1) {
             return 1;
         }
         
@@ -20,16 +22,16 @@ public class Exercise_5 {
     }
     
     public static int factorialCycle(int n) {
-
-        int result = 1;
         
-        // factorial 2! = 2*1
-        for (int i = 2; i <= n; i++) {
+        // 0! = 1 
+        // 1! = 1
+        int factorial = 1;
+        
+        for (int i = n; i > 1; i--) {
             
-            // n! = n*(n-1)
-            result *= i;
+            factorial *= i;
         }
 
-        return result;
+        return factorial;
     } 
 }
