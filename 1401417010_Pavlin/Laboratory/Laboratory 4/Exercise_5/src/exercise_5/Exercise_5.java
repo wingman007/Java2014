@@ -16,6 +16,7 @@ public class Exercise_5 {
             return 1;
         }
         
+        // n! = n*(n-1)!
         else {
             return n*factorialRecursion(n-1);
         }
@@ -27,6 +28,7 @@ public class Exercise_5 {
         // 1! = 1
         int factorial = 1;
         
+        // n! = (n-1)! * n
         for (int i = n; i > 1; i--) {
             
             factorial *= i;

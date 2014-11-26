@@ -12,6 +12,5 @@ public class Exercise_3 {
                 System.out.println(elements);
             }            
         }
-          
     }
 }
