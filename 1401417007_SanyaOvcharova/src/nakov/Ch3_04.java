@@ -9,8 +9,10 @@ public class Ch3_04 {
 		// TODO Auto-generated method stub
 		getBinaryVal(7);
 		checkBitVal(7);
+		
 		getBinaryVal(3);
 		checkBitVal(3);
+		
 		getBinaryVal(digit);
 		checkBitVal(digit);
 
