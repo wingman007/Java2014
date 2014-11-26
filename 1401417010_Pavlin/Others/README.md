@@ -1,4 +1,4 @@
 Допълнителни задачи
 ========
 
-![West Side-project story](http://www.commitstrip.com/wp-content/uploads/2014/11/Strip-Side-project-650-finalenglish.jpg)
+![Backseat coding](http://www.commitstrip.com/wp-content/uploads/2014/10/Strip-Regarder-le-code-dun-autre-650-finalenglish.jpg)
