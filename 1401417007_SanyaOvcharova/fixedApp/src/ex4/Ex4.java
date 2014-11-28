@@ -95,36 +95,6 @@ public class Ex4 {
 
 	
 
-	/**
-	 * Да се генерират по случаен начин 3 масива, всеки от които с до 20
-	 * елемента от цели числа принадлежащи на интервала [-100, 100]. Да се
-	 * намери средно квадратично (сума_от_квадратите/броя) на числата, които са
-	 * в интервал [-20, 20], за всеки масив.
-	 */
-
-	public static int[] randArr(int module, int arrNumber) {
-
-		// random numbers [-mudule, module]
-
-		Random rand = new Random();
-		int[] randArr = new int[arrNumber];
-		for (int i = 0; i < randArr.length; i++) {
-
-			randArr[i] = (rand.nextInt() % module + 1);
-		}
-		return randArr;
-
-	}
-
-	public static int sqrtArr(int[] arr) {
-		int sum = 0;
-		for (int i = 0; i < arr.length; i++) {
-			if (arr[i] >= -20 || arr[i] <= 20) {
-				sum += Math.pow((double) arr[i], 2);
-			}
-		}
-		return sum;
-
-	}
+	
 
 }
