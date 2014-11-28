@@ -77,28 +77,23 @@ public class Ex4 {
 	 * данни) за различните алгоритми.
 	 */
 	static int find_b(int x, int[] arr) {
-		int L = 0;
-		int R = arr.length - 1;
-		int m;
+		int left = 0;
+		int right = arr.length - 1;
+		int middle;
 		do {
-			m = (L + R) / 2;
-			if (arr[m] < x)
-				L = m + 1;
+			middle = (left + right) / 2;
+			if (arr[middle] < x)
+				left = middle + 1;
 			else
-				R = m - 1;
-		} while (arr[m] != x && R >= L);
-		if (arr[m] == x)
-			return m;
+				right = middle - 1;
+		} while (arr[middle] != x && right >= left);
+		if (arr[middle] == x)
+			return middle;
 		else
 			return -1;
 	}
 
-	static double srkv(int[] a) {
-		double s = 0;
-		for (int i = 0; i < a.length; i++)
-			s += a[i] * a[i];
-		return Math.sqrt(s / a.length);
-	}
+	
 
 	/**
 	 * Да се генерират по случаен начин 3 масива, всеки от които с до 20
