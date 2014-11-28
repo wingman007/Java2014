@@ -7,13 +7,13 @@ public class Ex2_07 {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
+		System.setProperty("file.encoding" , "UTF-8");
 		menu = new String[6];
-		menu[1] = "Теглене на сума";
-		menu[2] = "Промяна на ПИН";
-		menu[3] = "Проверка на наличнаст";
-		menu[4] = "Настройки";
-		menu[5] = "Изход";
+		menu[1] = "РўРµРіР»РµРЅРµ РЅР° СЃСѓРјР°";
+		menu[2] = "РџСЂРѕРјСЏРЅР° РЅР° PIN";
+		menu[3] = "РџСЂРѕРІРµСЂРєР° РЅР° РЅР°Р»РёС‡РЅРѕСЃС‚";
+		menu[4] = "РќР°СЃС‚СЂРѕР№РєРё";
+		menu[5] = "РР·С…РѕРґ";
 		
 		drawMenu(menu);
 		
@@ -33,19 +33,19 @@ public class Ex2_07 {
 		}
 
 		while (true) {
-			System.out.println("Изберете номер на меню!");
+			System.out.println("РР·Р±РµСЂРµС‚Рµ РјРµРЅСЋ РѕС‚ 1 РґРѕ 5!");
 			int input = Ex2_05.listener.nextInt();
 			
 			if (numEval(input)) {
-				System.out.println("Избрахте " + menu[input]);
+				System.out.println("Р’РёРµ РёР·Р±СЂР°С…С‚Рµ " + menu[input]);
 
 			} else {
-				System.out.println("Невалиден идентификатор");
+				System.out.println("РќРµРІР°Р»РёРґРµРЅ РєРѕРґ РЅР° РѕРїРµСЂР°С†РёСЏ");
 
 			}
 			
 			if(input == 5){
-				System.out.println("Излязохте от системата!");
+				System.out.println("Р’РёРµ РёР·Р»СЏР·РѕС…С‚Рµ РѕС‚ РЅР°С€Р°С‚Р° СЃРёСЃС‚РµРјР°!");
 				break;
 			}
 		}
