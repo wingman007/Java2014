@@ -1,0 +1,7 @@
+name: sKits
+main: skits.main.SKitMain
+version: 1
+website: 
+author: FEarBG
+commands: 
+    kit:
