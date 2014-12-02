@@ -10,7 +10,7 @@ public class SoundEffect {
     public void sound(String path) {
         
         try {
-
+            
             AudioInputStream inputStream = AudioSystem.getAudioInputStream(this.getClass().getClassLoader().getResource(path));
 
             Clip sound = AudioSystem.getClip();
@@ -20,6 +20,8 @@ public class SoundEffect {
             sound.start();
         }
         
-        catch(Exception e) {}
+        catch(Exception error) {
+            
+        }
     }
 }

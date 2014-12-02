@@ -3,7 +3,10 @@ package jcalc.main;
 import jcalc.sounds.SoundEffect;
 
 public class JavaCalcMain extends javax.swing.JFrame {
-
+    
+    private int total = 0;
+    private char operator;
+    
     public JavaCalcMain() {
         initComponents();
         
@@ -35,6 +38,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
         buttonEquals = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setTitle("Java Calculator (jCalc) 1.0");
 
         calcDisplay.setFont(new java.awt.Font("Arial", 1, 23)); // NOI18N
         calcDisplay.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
@@ -298,7 +302,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("1");
         }
         
-        else if(calcDisplay.getText().length() < 15) {  
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("1");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {  
             String display = calcDisplay.getText() + "1";
             calcDisplay.setText(display);
         }
@@ -313,11 +321,14 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("3");
         }
         
-        else if(calcDisplay.getText().length() < 15) {  
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("3");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {  
             String display = calcDisplay.getText() + "3";
             calcDisplay.setText(display);
         }
-        
     }//GEN-LAST:event_button3ActionPerformed
 
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
@@ -329,7 +340,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("2");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("2");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "2";
             calcDisplay.setText(display);
         }
@@ -338,6 +353,8 @@ public class JavaCalcMain extends javax.swing.JFrame {
     private void buttonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClearActionPerformed
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/clear.wav");
+        
+        calcDisplay.setText("0");
     }//GEN-LAST:event_buttonClearActionPerformed
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
@@ -349,7 +366,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("4");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("4");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "4";
             calcDisplay.setText(display);
         }
@@ -364,7 +385,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("5");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("5");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "5";
             calcDisplay.setText(display);
         }
@@ -379,7 +404,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("6");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("6");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "6";
             calcDisplay.setText(display);
         }
@@ -394,7 +423,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("7");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("7");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "7";
             calcDisplay.setText(display);
         }
@@ -409,7 +442,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("8");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("8");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "8";
             calcDisplay.setText(display);
         }
@@ -424,7 +461,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("9");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("9");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "9";
             calcDisplay.setText(display);
         }
@@ -439,7 +480,11 @@ public class JavaCalcMain extends javax.swing.JFrame {
             calcDisplay.setText("0");
         }
         
-        else if(calcDisplay.getText().length() < 15) {    
+        else if(calcDisplay.getText().matches("[+-/x]")) {
+            calcDisplay.setText("0");
+        }
+        
+        else if(calcDisplay.getText().length() < 9) {    
             String display = calcDisplay.getText() + "0";
             calcDisplay.setText(display);
         }
@@ -449,30 +494,102 @@ public class JavaCalcMain extends javax.swing.JFrame {
         
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/multiplied.wav");
+
+        if(calcDisplay.getText().matches("[0-9]+")) {
+            total = Integer.parseInt(calcDisplay.getText());
+            calcDisplay.setText("x");
+        }
+        
+        getOperator("x");
     }//GEN-LAST:event_buttonMultipliedActionPerformed
 
     private void buttonDividedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDividedActionPerformed
         
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/divided.wav");
+        
+        if(calcDisplay.getText().matches("[0-9]+")) {
+            total = Integer.parseInt(calcDisplay.getText());
+            calcDisplay.setText("/");
+        }
+        
+        getOperator("/");
     }//GEN-LAST:event_buttonDividedActionPerformed
 
     private void buttonMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMinusActionPerformed
         
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/minus.wav");
+        
+        if(calcDisplay.getText().matches("[0-9]+")) {
+            total = Integer.parseInt(calcDisplay.getText());
+            calcDisplay.setText("-");
+        }
+        
+        getOperator("-");
     }//GEN-LAST:event_buttonMinusActionPerformed
 
     private void buttonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPlusActionPerformed
         
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/plus.wav");
+        
+        if(calcDisplay.getText().matches("[0-9]+")) {
+            total = Integer.parseInt(calcDisplay.getText());
+            calcDisplay.setText("+");
+        }
+        
+        getOperator("+");
     }//GEN-LAST:event_buttonPlusActionPerformed
 
+    private void getOperator(String lastSelected) {
+        operator = lastSelected.charAt(0);
+    }
+    
     private void buttonEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEqualsActionPerformed
         
         SoundEffect soundObject = new SoundEffect();
         soundObject.sound("jcalc/sounds/wav/equals.wav");
+
+        switch(operator) {
+            
+            case '+':
+            total += Integer.parseInt(calcDisplay.getText());
+            break;
+                
+            case '-':
+            total -= Integer.parseInt(calcDisplay.getText());
+            break;
+                
+            case 'x':
+            total *= Integer.parseInt(calcDisplay.getText());
+            break;
+                
+            case '/':
+            try {
+                total /= Integer.parseInt(calcDisplay.getText());
+            }
+            
+            catch(ArithmeticException error) {
+                total = -99999999;
+            }
+            break;
+        }
+
+        String sTotal = Integer.toString(total);
+
+        if(sTotal.length() < 9) {
+            
+            calcDisplay.setText(sTotal);
+        }
+        
+        else if(sTotal.equals("-99999999")) {
+            calcDisplay.setText("Error / by zero");
+        }
+        
+        else {
+            calcDisplay.setText("Error - " + sTotal);
+        }  
     }//GEN-LAST:event_buttonEqualsActionPerformed
 
     public static void main(String args[]) {
