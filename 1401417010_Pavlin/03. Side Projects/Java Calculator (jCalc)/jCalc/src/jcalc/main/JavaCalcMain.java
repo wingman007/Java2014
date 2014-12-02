@@ -1,9 +1,15 @@
 package jcalc.main;
 
+import jcalc.sounds.SoundEffect;
+
 public class JavaCalcMain extends javax.swing.JFrame {
 
     public JavaCalcMain() {
         initComponents();
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/startup.wav");
+
     }
 
     @SuppressWarnings("unchecked")
@@ -280,79 +286,197 @@ public class JavaCalcMain extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void calcDisplayActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_calcDisplayActionPerformed
-        // TODO add your handling code here:
+
     }//GEN-LAST:event_calcDisplayActionPerformed
 
     private void button1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button1ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/1.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("1");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {  
+            String display = calcDisplay.getText() + "1";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button1ActionPerformed
 
     private void button3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button3ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/3.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("3");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {  
+            String display = calcDisplay.getText() + "3";
+            calcDisplay.setText(display);
+        }
+        
     }//GEN-LAST:event_button3ActionPerformed
 
     private void button2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button2ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/2.wav"); 
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("2");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "2";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button2ActionPerformed
 
     private void buttonClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonClearActionPerformed
-        // TODO add your handling code here:
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/clear.wav");
     }//GEN-LAST:event_buttonClearActionPerformed
 
     private void button4ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button4ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/4.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("4");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "4";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button4ActionPerformed
 
     private void button5ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button5ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/5.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("5");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "5";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button5ActionPerformed
 
     private void button6ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button6ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/6.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("6");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "6";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button6ActionPerformed
 
     private void button7ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button7ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/7.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("7");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "7";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button7ActionPerformed
 
     private void button8ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button8ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/8.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("8");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "8";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button8ActionPerformed
 
     private void button9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button9ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/9.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("9");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "9";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button9ActionPerformed
 
     private void button0ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_button0ActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/0.wav");
+        
+        if(calcDisplay.getText().equals("0")) {
+            calcDisplay.setText("0");
+        }
+        
+        else if(calcDisplay.getText().length() < 15) {    
+            String display = calcDisplay.getText() + "0";
+            calcDisplay.setText(display);
+        }
     }//GEN-LAST:event_button0ActionPerformed
 
     private void buttonMultipliedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMultipliedActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/multiplied.wav");
     }//GEN-LAST:event_buttonMultipliedActionPerformed
 
     private void buttonDividedActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonDividedActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/divided.wav");
     }//GEN-LAST:event_buttonDividedActionPerformed
 
     private void buttonMinusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonMinusActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/minus.wav");
     }//GEN-LAST:event_buttonMinusActionPerformed
 
     private void buttonPlusActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonPlusActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/plus.wav");
     }//GEN-LAST:event_buttonPlusActionPerformed
 
     private void buttonEqualsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_buttonEqualsActionPerformed
-        // TODO add your handling code here:
+        
+        SoundEffect soundObject = new SoundEffect();
+        soundObject.sound("jcalc/sounds/wav/equals.wav");
     }//GEN-LAST:event_buttonEqualsActionPerformed
 
     public static void main(String args[]) {
 
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
         try {
             for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
                 if ("Nimbus".equals(info.getName())) {
@@ -369,13 +493,9 @@ public class JavaCalcMain extends javax.swing.JFrame {
         } catch (javax.swing.UnsupportedLookAndFeelException ex) {
             java.util.logging.Logger.getLogger(JavaCalcMain.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
-        //</editor-fold>
 
-
-        java.awt.EventQueue.invokeLater(new Runnable() {
-            public void run() {
-                new JavaCalcMain().setVisible(true);
-            }
+        java.awt.EventQueue.invokeLater(() -> {
+            new JavaCalcMain().setVisible(true);
         });
     }
 
