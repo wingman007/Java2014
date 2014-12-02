@@ -18,25 +18,26 @@ public class KitCommand implements CommandExecutor {
             return false;
         }
         
-        Player player = (Player)sender;
+        final Player player = (Player)sender;
         
-        if(args[0].equalsIgnoreCase("pvp")) {
+        //if(args[0].equalsIgnoreCase("pvp")) {
             
-            clearInventory(player.getInventory());
+            //clearInventory(player.getInventory());
             
             player.getInventory().setHelmet(new ItemStack(Material.IRON_HELMET, 1));
             player.getInventory().setChestplate(new ItemStack(Material.IRON_CHESTPLATE, 1));
             player.getInventory().setLeggings(new ItemStack(Material.IRON_LEGGINGS, 1));
             player.getInventory().setBoots(new ItemStack(Material.IRON_BOOTS, 1));
-            player.getInventory().addItem(new ItemStack(Material.DIAMOND_SWORD, 1));
+            player.getInventory().addItem(new ItemStack(Material.IRON_SWORD, 1));
+            player.getInventory().addItem(new ItemStack(Material.IRON_AXE, 1));
+            player.getInventory().addItem(new ItemStack(Material.IRON_PICKAXE, 1));
             player.getInventory().addItem(new ItemStack(Material.MUSHROOM_SOUP, 1));
                     
-            player.sendMessage(ChatColor.DARK_GREEN + "You have chosen the basic pvp kit!");
+            player.sendMessage(ChatColor.DARK_GREEN + "You have been given the basic kit!");
             
             return true;   
-        }
-        
-        return true;
+        //}
+        //return true;
     }
     
     public void clearInventory(PlayerInventory inv) {
