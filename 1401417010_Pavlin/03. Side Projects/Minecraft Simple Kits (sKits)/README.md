@@ -63,3 +63,9 @@ Minecraft Simple Kits (sKits)
 - Thor Hammer
 
 - No Item Repair
+
+- GOD Mode
+
+- Creepers Don't Destroy Blocks
+
+- Day/Night Cycle

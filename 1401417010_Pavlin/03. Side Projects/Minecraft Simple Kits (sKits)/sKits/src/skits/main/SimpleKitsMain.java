@@ -6,6 +6,8 @@ import org.bukkit.plugin.java.JavaPlugin;
 import skits.cmds.KitCommand;
 import skits.cmds.SoupCommand;
 import skits.cmds.SpawnCommand;
+import skits.events.BlockListener;
+import skits.events.DamageListener;
 import skits.events.InventoryListener;
 import skits.events.PlayerListener;
 
@@ -21,6 +23,8 @@ public class SimpleKitsMain extends JavaPlugin {
         
         pm.registerEvents(new InventoryListener(), this);
         pm.registerEvents(new PlayerListener(), this);
+        pm.registerEvents(new DamageListener(), this);
+        pm.registerEvents(new BlockListener(), this);
         
         getCommand("kit").setExecutor(new KitCommand());
         getCommand("soup").setExecutor(new SoupCommand());
