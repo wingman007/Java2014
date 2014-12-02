@@ -37,6 +37,8 @@ Minecraft Simple Kits (sKits)
 - events
   - InventoryListener
   - PlayerListener
+  - DamageListener
+  - BlockListener
 
 - main
   - SimpleKitsMain
