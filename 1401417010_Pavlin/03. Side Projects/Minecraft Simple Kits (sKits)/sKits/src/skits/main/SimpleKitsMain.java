@@ -5,6 +5,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 
 import skits.cmds.KitCommand;
 import skits.cmds.SoupCommand;
+import skits.cmds.SpawnCommand;
 import skits.events.InventoryListener;
 import skits.events.PlayerListener;
 
@@ -23,6 +24,7 @@ public class SimpleKitsMain extends JavaPlugin {
         
         getCommand("kit").setExecutor(new KitCommand());
         getCommand("soup").setExecutor(new SoupCommand());
+        getCommand("spawn").setExecutor(new SpawnCommand());
         
         System.out.println("sKits edabled!");
     }
