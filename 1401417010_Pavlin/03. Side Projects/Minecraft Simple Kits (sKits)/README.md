@@ -4,9 +4,9 @@ Minecraft Simple Kits (sKits)
 
 **TODO:**
 
-- DamageListener
+- *CLASS - DamageListener*
 
-- BlockListener
+- *CLASS - BlockListener*
 
 - Clickable Signs
 
