@@ -9,3 +9,21 @@ Minecraft Simple Kits (sKits)
 - BlockListener
 
 - Clickable Signs
+
+- Lighting Strike
+
+- Obsidian Tools
+
+- Human Villagers
+
+- Editable Signs
+
+- Timber!
+
+- Keep Inventory on Death
+
+- Starting Inventory
+
+- Thor Hammer
+
+- No Item Repair
