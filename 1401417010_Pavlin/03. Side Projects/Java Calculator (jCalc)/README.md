@@ -30,7 +30,7 @@ jCalc използва различни звукови ефекти от игр�
 
 #  TODO / Bugs
 
-- Проверката за делене на нула е реализирана в стил "[like a madafakaa](https://www.youtube.com/watch?v=VRAM_LAy-Lk)" - трябва да се оправи.
+- Проверката за делене на нула е реализирана в стил "[like a madafakaa](https://www.youtube.com/watch?v=VRAM_LAy-Lk)" - трябва да се намери по-добър начин.
 
 - След получаване на "Error / by zero" или "Error - " (за прекалено голямо число), ако някой 'трол' не изчисти calcDisplay и се опита да извършва операции с тях - гърми (throws Exception).
 
