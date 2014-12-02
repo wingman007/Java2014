@@ -41,7 +41,7 @@ public class Ex4_07_Updated {
 				sum += Math.pow((double) arr[i], 2);
 			}
 		}
-                sum = Math.sqrt(sum)/arr.length;
+                sum = Math.sqrt(sum/(double)arr.length);
 		return sum;
 
 	}
