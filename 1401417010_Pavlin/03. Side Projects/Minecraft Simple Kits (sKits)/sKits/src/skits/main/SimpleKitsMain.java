@@ -10,6 +10,7 @@ import skits.events.BlockListener;
 import skits.events.DamageListener;
 import skits.events.InventoryListener;
 import skits.events.PlayerListener;
+import skits.util.Utility;
 
 public class SimpleKitsMain extends JavaPlugin {
     
@@ -29,6 +30,8 @@ public class SimpleKitsMain extends JavaPlugin {
         getCommand("kit").setExecutor(new KitCommand());
         getCommand("soup").setExecutor(new SoupCommand());
         getCommand("spawn").setExecutor(new SpawnCommand());
+        
+        Utility.Initialize();
         
         System.out.println("sKits edabled!");
     }
