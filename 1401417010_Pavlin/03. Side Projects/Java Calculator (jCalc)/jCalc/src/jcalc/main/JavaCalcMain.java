@@ -578,7 +578,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
 
         String sTotal = Integer.toString(total);
 
-        if(sTotal.length() < 9) {
+        if(sTotal.length() < 10) {
             
             calcDisplay.setText(sTotal);
         }
