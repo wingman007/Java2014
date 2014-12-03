@@ -16,11 +16,11 @@ Java Calculator (jCalc)
 
 #  Дизайн
 
-**Java Calculator (jCalc) 1.0 - Idea**
+- **Java Calculator (jCalc) 1.0 - Idea**
 
 ![jCalc 1.0 GUI - Idea](http://img9.uploadhouse.com/fileuploads/20296/20296219dd28fa8aad29b74c7f91e174950ee7c0.png)
 
-**Java Calculator (jCalc) 1.0 - Finished**
+- **Java Calculator (jCalc) 1.0 - Finished**
 
 ![jCalc 1.0 GUI - Finished](http://img7.uploadhouse.com/fileuploads/20300/203005976151b4b32f5ecdfc79293922b7fc6397.png)
 
