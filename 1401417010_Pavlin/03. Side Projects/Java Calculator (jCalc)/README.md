@@ -1,6 +1,6 @@
 Java Calculator (jCalc)
 ========
-#Описание
+#Описание (Version 1.0)
 
 - Извършва събиране, изваждане, умножение и деление с int числа.
 
@@ -11,14 +11,10 @@ Java Calculator (jCalc)
 - Показва съобщение за препълване (прекалено голямо число), както и за деление на 0.
 
 - Всеки бутон има собствен звуков ефект.
+- 
+#Описание (Version 2.0)
 
-#Особености
-
-jCalc използва различни звукови ефекти от играта Unreal Tournament при всяко натискане на бутоните.
-
-Не е особено практично, но идеята беше да тествам начин за добавяне на аудио към JFrame.
-
-#  GUI
+#  Дизайн
 
 **jCalc 1.0 GUI - Idea**
 
@@ -31,19 +27,7 @@ jCalc използва различни звукови ефекти от игр�
 
 **jCalc 2.0 GUI - Idea**
 
-- **Version A**
-
-![jCalc 2.0 GUI - Idea A](http://img1.uploadhouse.com/fileuploads/20303/2030308127f762754ea8f893c978f42daf9414be.png)
-
-- **Version B**
-
-![jCalc 2.0 GUI - Idea B](http://img0.uploadhouse.com/fileuploads/20303/20303140ab549e0feadd8e18abf7bb1efe335c63.png)
-
-- **Version C**
-
-![jCalc 2.0 GUI - Idea C](http://img1.uploadhouse.com/fileuploads/20303/20303141c2e417e7aac298e91ef7842db0a549e5.png)
-
-**Which version is the best ?** - [VOTE HERE](http://strawpoll.me/3112315)
+![jCalc 2.0 GUI - Idea](http://img0.uploadhouse.com/fileuploads/20303/20303140ab549e0feadd8e18abf7bb1efe335c63.png)
 
 #  TODO
 
