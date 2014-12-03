@@ -36,11 +36,11 @@ Java Calculator (jCalc)
 
 - **Java Calculator (jCalc) 2.0 - Idea**
 
-![jCalc 2.0 GUI - Idea](http://img4.uploadhouse.com/fileuploads/20305/20305704dcd2b40cd1cf371c99f43f50e14fbce3.png)
+![jCalc 2.0 GUI - Idea](http://img3.uploadhouse.com/fileuploads/20305/20305723a9e325259238c6bf53050af1f4dda2c0.png)
 
 - **Java Calculator (jCalc) 2.0 - Finished**
 
-![jCalc 2.0 GUI - Finished](http://img3.uploadhouse.com/fileuploads/20305/20305723a9e325259238c6bf53050af1f4dda2c0.png)
+![jCalc 2.0 GUI - Finished](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
 
 #  TODO
 
