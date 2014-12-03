@@ -36,7 +36,7 @@ Java Calculator (jCalc)
 
 - **Java Calculator (jCalc) 2.0 - Idea**
 
-![jCalc 2.0 GUI - Idea](http://img2.uploadhouse.com/fileuploads/20305/203056929cb64d91caf9dea7cf93e37f6e38f466.png)
+![jCalc 2.0 GUI - Idea](http://img4.uploadhouse.com/fileuploads/20305/20305704dcd2b40cd1cf371c99f43f50e14fbce3.png)
 
 - **Java Calculator (jCalc) 2.0 - Finished**
 
