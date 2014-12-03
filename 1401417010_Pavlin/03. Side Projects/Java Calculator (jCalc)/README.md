@@ -28,9 +28,22 @@ jCalc използва различни звукови ефекти от игр�
 
 ![jCalc 1.0 GUI - Finished](http://img7.uploadhouse.com/fileuploads/20300/203005976151b4b32f5ecdfc79293922b7fc6397.png)
 
+
 **jCalc 2.0 GUI - Idea**
 
-![jCalc 2.0 GUI - Idea](http://img1.uploadhouse.com/fileuploads/20303/2030308127f762754ea8f893c978f42daf9414be.png)
+- **Version A**
+
+![jCalc 2.0 GUI - Idea A](http://img1.uploadhouse.com/fileuploads/20303/2030308127f762754ea8f893c978f42daf9414be.png)
+
+- **Version B**
+
+![jCalc 2.0 GUI - Idea B](http://img0.uploadhouse.com/fileuploads/20303/20303140ab549e0feadd8e18abf7bb1efe335c63.png)
+
+- **Version C**
+
+![jCalc 2.0 GUI - Idea C](http://img1.uploadhouse.com/fileuploads/20303/20303141c2e417e7aac298e91ef7842db0a549e5.png)
+
+**Which version is the best ?** - [VOTE HERE](http://strawpoll.me/3112315)
 
 #  TODO
 
