@@ -11,23 +11,27 @@ Java Calculator (jCalc)
 - Показва съобщение за препълване (прекалено голямо число), както и за деление на 0.
 
 - Всеки бутон има собствен звуков ефект.
-- 
+
 #Описание (Version 2.0)
 
 #  Дизайн
 
-**jCalc 1.0 GUI - Idea**
+**Java Calculator (jCalc) 1.0 - Idea**
 
 ![jCalc 1.0 GUI - Idea](http://img9.uploadhouse.com/fileuploads/20296/20296219dd28fa8aad29b74c7f91e174950ee7c0.png)
 
-**jCalc 1.0 GUI - Finished**
+**Java Calculator (jCalc) 1.0 - Finished**
 
 ![jCalc 1.0 GUI - Finished](http://img7.uploadhouse.com/fileuploads/20300/203005976151b4b32f5ecdfc79293922b7fc6397.png)
 
 
-**jCalc 2.0 GUI - Idea**
+**Java Calculator (jCalc) 2.0 - Idea**
 
 ![jCalc 2.0 GUI - Idea](http://img0.uploadhouse.com/fileuploads/20303/20303140ab549e0feadd8e18abf7bb1efe335c63.png)
+
+**Java Calculator (jCalc) 1.0 - Finished**
+
+![jCalc 2.0 GUI - Idea](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
 
 #  TODO
 
