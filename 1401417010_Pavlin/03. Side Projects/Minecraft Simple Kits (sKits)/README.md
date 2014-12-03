@@ -3,7 +3,7 @@ Minecraft Simple Kits (sKits)
 ![Minecraft Simple Kits](http://i39.tinypic.com/j94gti.png)
 
 #Описание:
-Колекция от малки модоте (kits) за Minecraft 1.6.4
+Колекция от малки модоте за Minecraft 1.6.4
 
 #Съдържание:
 
@@ -21,7 +21,7 @@ Minecraft Simple Kits (sKits)
 
 Замразяване на нивото за огладняване.
 
-- **Ютилити**
+- **Utility**
 
 Задаване на различни цветове на имената на различните играчи.
 
