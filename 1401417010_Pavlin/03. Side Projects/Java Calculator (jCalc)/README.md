@@ -14,6 +14,16 @@ Java Calculator (jCalc)
 
 #Описание (Version 2.0)
 
+- 
+
+-
+
+-
+
+-
+
+-
+
 #  Дизайн
 
 - **Java Calculator (jCalc) 1.0 - Idea**
@@ -28,9 +38,9 @@ Java Calculator (jCalc)
 
 ![jCalc 2.0 GUI - Idea](http://img0.uploadhouse.com/fileuploads/20303/20303140ab549e0feadd8e18abf7bb1efe335c63.png)
 
-- **Java Calculator (jCalc) 1.0 - Finished**
+- **Java Calculator (jCalc) 2.0 - Finished**
 
-![jCalc 2.0 GUI - Idea](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
+![jCalc 2.0 GUI - Finished](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
 
 #  TODO
 
