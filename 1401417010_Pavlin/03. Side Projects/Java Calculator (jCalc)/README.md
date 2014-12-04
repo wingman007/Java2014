@@ -14,7 +14,7 @@ Java Calculator (jCalc)
 
 - **Java Calculator (jCalc) 2.0 - Idea**
 
-![jCalc 2.0 GUI - Idea](http://img3.uploadhouse.com/fileuploads/20305/20305723a9e325259238c6bf53050af1f4dda2c0.png)
+![jCalc 2.0 GUI - Idea](http://img7.uploadhouse.com/fileuploads/20308/20308637f99431b5da42704f2f002ea37909a6c4.png)
 
 - **Java Calculator (jCalc) 2.0 - Finished**
 
