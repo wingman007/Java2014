@@ -34,5 +34,5 @@ Java Calculator (jCalc)
 
 - Ако се умножи [66666 x 66666](https://www.youtube.com/watch?v=7mHe6FMs46o) - показва 149388260, вместо  4444355556  О.о
 
-![Illuminati](http://thinkaboutthat.blog.bg/photos/119780/277129-907-1118349335-illuminati.jpg)
+Обяснение : [![Illuminati](http://thinkaboutthat.blog.bg/photos/119780/277129-907-1118349335-illuminati.jpg)](https://www.youtube.com/watch?v=gSl5_G_nVq0)
 
