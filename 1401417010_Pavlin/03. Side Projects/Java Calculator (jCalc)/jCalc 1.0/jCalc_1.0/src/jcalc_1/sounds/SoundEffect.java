@@ -29,7 +29,6 @@ public class SoundEffect {
     public static void errorBox(String infoMessage, String titleBar) {
         JOptionPane.showMessageDialog(null, infoMessage, titleBar, JOptionPane.INFORMATION_MESSAGE);
     }
-
 }
 
 

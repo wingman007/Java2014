@@ -561,6 +561,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
         else if(calcDisplay.getText().contains("Error / by Zero") || calcDisplay.getText().contains("Error Overflow ")) {
         
             calcDisplay.setText("0");
+            total = 0;
         }
         
         getOperator("x");
@@ -583,6 +584,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
         else if(calcDisplay.getText().contains("Error / by Zero") || calcDisplay.getText().contains("Error Overflow ")) {
         
             calcDisplay.setText("0");
+            total = 0;
         }
         
         getOperator("/");
@@ -605,6 +607,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
         else if(calcDisplay.getText().contains("Error / by Zero") || calcDisplay.getText().contains("Error Overflow ")) {
         
             calcDisplay.setText("0");
+            total = 0;
         }
         
         getOperator("-");
@@ -627,6 +630,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
         else if(calcDisplay.getText().contains("Error / by Zero") || calcDisplay.getText().contains("Error Overflow ")) {
         
             calcDisplay.setText("0");
+            total = 0;
         }
         
         getOperator("+");
