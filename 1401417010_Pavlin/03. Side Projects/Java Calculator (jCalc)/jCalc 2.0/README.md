@@ -24,6 +24,6 @@ Java Calculator (jCalc)
 
 ![jCalc 2.0 GUI - Finished](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
 
-#  TODO
+# TODO
 
 # Bugs
