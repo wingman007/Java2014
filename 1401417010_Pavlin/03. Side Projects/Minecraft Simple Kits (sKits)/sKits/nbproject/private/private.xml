@@ -5,13 +5,11 @@
         <group>
             <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/plugin.yml</file>
             <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/main/SimpleKitsMain.java</file>
-            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/cmds/SpawnCommand.java</file>
-            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/cmds/SoupCommand.java</file>
             <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/events/PlayerListener.java</file>
-            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/events/DamageListener.java</file>
-            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/events/BlockListener.java</file>
             <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/util/Utility.java</file>
+            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/events/InventoryListener.java</file>
             <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/cmds/KitCommand.java</file>
+            <file>file:/F:/Dropbox/Java%20Workspace/GitHub/Java2014/1401417010_Pavlin/03.%20Side%20Projects/Minecraft%20Simple%20Kits%20(sKits)/sKits/src/skits/cmds/SoupCommand.java</file>
         </group>
     </open-files>
 </project-private>

@@ -19,7 +19,7 @@ public class KitCommand implements CommandExecutor {
         
         final Player player = (Player)sender;
         
-        if(args.length >= 1) { // Fix the bug
+        if(args.length > 0) {
 
             if(Utility.kits.contains(args[0].toLowerCase())) {
 
@@ -29,6 +29,11 @@ public class KitCommand implements CommandExecutor {
 
                 return true;
             }
+        }
+        
+        if (args.length == 0) {
+            player.sendMessage(ChatColor.GRAY + "Type 'pve' or 'pvp' after /kit!");
+            return false; 
         }
         
         player.sendMessage(ChatColor.GRAY + "The kit '" + args[0] + "' does not exist!");
