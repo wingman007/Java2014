@@ -1,6 +1,6 @@
-Minecraft Simple Kits (sKits)
+Simple Kits (sKits)
 ========
-![Minecraft Simple Kits](http://i39.tinypic.com/j94gti.png)
+![Simple Kits](http://i39.tinypic.com/j94gti.png)
 
 #Описание:
 Колекция от малки модоте за Minecraft 1.6.4
@@ -48,29 +48,3 @@ Minecraft Simple Kits (sKits)
 
 - util
   - Utility
-
-#TODO:
-
-- Lighting Strike
-
-- Obsidian Tools
-
-- Human Villagers
-
-- Editable Signs
-
-- Timber
-
-- Keep Inventory on Death
-
-- Starting Inventory
-
-- Thor Hammer
-
-- No Item Repair
-
-- GOD Mode
-
-- Creepers Don't Destroy Blocks
-
-- Day/Night Cycle
