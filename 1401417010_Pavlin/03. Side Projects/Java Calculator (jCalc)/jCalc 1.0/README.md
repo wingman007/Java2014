@@ -32,5 +32,5 @@ Java Calculator (jCalc)
 
 # Bugs
 
-- Ако се умножи 66666 x 66666 - показва 149388260, вместо  4444355556 - [Iron Maiden - The Number of the Beast](https://help.github.com/articles/relative-links-in-readmes/) О.о ?
+- Ако се умножи 66666 x 66666 - показва 149388260, вместо  4444355556 [Iron Maiden - The Number of the Beast](https://www.youtube.com/watch?v=7mHe6FMs46o) О.о
 
