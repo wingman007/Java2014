@@ -10,4 +10,4 @@ Java Calculator Bot (jCalcBot) [WIP]
 
 - **jCalcBot 1.0 - Finished**
 
-![jCalcBot 1.0 - Finished](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
+![jCalcBot 1.0 - Finished](http://img9.uploadhouse.com/fileuploads/20320/203204591eef210fdc49e4ce553e8d3fe4b721e1.png)
