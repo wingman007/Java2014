@@ -22,7 +22,7 @@ Java Calculator (jCalc)
 
 - **Java Calculator (jCalc) 2.0 - Finished**
 
-![jCalc 2.0 GUI - Finished](http://img2.wikia.nocookie.net/__cb20130627193128/pokemon-competitive-battling/it/images/3/31/400px-Work_in_Progress_Header.png)
+![jCalc 2.0 GUI - Finished](http://img1.uploadhouse.com/fileuploads/20314/203146611eef17a9231ade99e75ce11b274bf8c1.png)
 
 # TODO
 
