@@ -2,7 +2,7 @@ Java Calculator (jCalc)
 ========
 - **Java Calculator (jCalc) 1.0**
 
-![jCalc 1.0 GUI - Finished](http://img7.uploadhouse.com/fileuploads/20300/203005976151b4b32f5ecdfc79293922b7fc6397.png)
+![jCalc 1.0 GUI - Finished](http://img6.uploadhouse.com/fileuploads/20319/20319866a05d6dd832796d19762a357cc4928621.png)
 
 - **Java Calculator (jCalc) 2.0**
 

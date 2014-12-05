@@ -39,6 +39,7 @@ public class JavaCalcMain extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Java Calculator (jCalc) 1.0");
+        setResizable(false);
 
         calcDisplay.setFont(new java.awt.Font("Arial", 1, 23)); // NOI18N
         calcDisplay.setHorizontalAlignment(javax.swing.JTextField.RIGHT);
