@@ -8,7 +8,6 @@ import org.bukkit.entity.Player;
 
 import skits.util.Utility;
 
-
 public class SpawnCommand implements CommandExecutor {
     
     @Override

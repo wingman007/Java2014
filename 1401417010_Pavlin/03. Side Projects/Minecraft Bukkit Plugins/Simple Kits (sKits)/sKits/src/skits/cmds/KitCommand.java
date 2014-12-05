@@ -40,4 +40,3 @@ public class KitCommand implements CommandExecutor {
         return false; 
     }
 }
-

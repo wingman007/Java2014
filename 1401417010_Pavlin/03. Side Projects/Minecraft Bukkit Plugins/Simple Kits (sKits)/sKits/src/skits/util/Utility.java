@@ -18,7 +18,6 @@ public class Utility {
     
     public static List<String> kits = new ArrayList<>();
     
-    
     public static void Initialize() {
         
         world.setSpawnLocation(0, 65, 0);
@@ -68,6 +67,7 @@ public class Utility {
         }
         
         if(player.isOp()) {
+            
             return ChatColor.RED;
         }
         
