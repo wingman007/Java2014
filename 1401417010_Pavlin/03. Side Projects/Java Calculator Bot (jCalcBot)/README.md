@@ -1,4 +1,4 @@
-Java Calculator Bot (jCalcBot)
+Java Calculator Bot (jCalcBot) [WIP]
 ========
 [![CalcBot Demo](https://img.youtube.com/vi/VZaLEM3qk2U/hqdefault.jpg)](https://www.youtube.com/watch?v=VZaLEM3qk2U)
 

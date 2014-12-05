@@ -30,25 +30,25 @@ public class JavaCalcMain extends javax.swing.JFrame {
     private void initComponents() {
 
         jTextDisplay = new javax.swing.JTextField();
-        jButtonClear = new javax.swing.JButton();
         jButton1 = new javax.swing.JButton();
         jButton2 = new javax.swing.JButton();
         jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
         jButton5 = new javax.swing.JButton();
         jButton6 = new javax.swing.JButton();
-        jButtonMultiplied = new javax.swing.JButton();
         jButton7 = new javax.swing.JButton();
         jButton8 = new javax.swing.JButton();
         jButton9 = new javax.swing.JButton();
-        jButtonDivided = new javax.swing.JButton();
-        jButtonPositiveNegative = new javax.swing.JButton();
         jButton0 = new javax.swing.JButton();
-        jButtonMinus = new javax.swing.JButton();
-        jButtonPlus = new javax.swing.JButton();
-        jButtonPow = new javax.swing.JButton();
         jButtonDot = new javax.swing.JButton();
+        jButtonClear = new javax.swing.JButton();
+        jButtonPlus = new javax.swing.JButton();
+        jButtonMinus = new javax.swing.JButton();
+        jButtonMultiplied = new javax.swing.JButton();
+        jButtonDivided = new javax.swing.JButton();
+        jButtonPow = new javax.swing.JButton();
         jButtonSqrt = new javax.swing.JButton();
+        jButtonPositiveNegative = new javax.swing.JButton();
         jButtonEquals = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -61,16 +61,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
         jTextDisplay.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextDisplayActionPerformed(evt);
-            }
-        });
-
-        jButtonClear.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonClear.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonClear.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonClear.setText("clear");
-        jButtonClear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonClearActionPerformed(evt);
             }
         });
 
@@ -134,16 +124,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
             }
         });
 
-        jButtonMultiplied.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonMultiplied.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonMultiplied.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonMultiplied.setText("x");
-        jButtonMultiplied.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMultipliedActionPerformed(evt);
-            }
-        });
-
         jButton7.setBackground(new java.awt.Color(0, 0, 0));
         jButton7.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jButton7.setForeground(new java.awt.Color(255, 255, 255));
@@ -174,26 +154,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
             }
         });
 
-        jButtonDivided.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonDivided.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonDivided.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonDivided.setText("/");
-        jButtonDivided.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonDividedActionPerformed(evt);
-            }
-        });
-
-        jButtonPositiveNegative.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonPositiveNegative.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonPositiveNegative.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonPositiveNegative.setText("+/-");
-        jButtonPositiveNegative.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPositiveNegativeActionPerformed(evt);
-            }
-        });
-
         jButton0.setBackground(new java.awt.Color(0, 0, 0));
         jButton0.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jButton0.setForeground(new java.awt.Color(255, 255, 255));
@@ -201,36 +161,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
         jButton0.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton0ActionPerformed(evt);
-            }
-        });
-
-        jButtonMinus.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonMinus.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonMinus.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonMinus.setText("-");
-        jButtonMinus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonMinusActionPerformed(evt);
-            }
-        });
-
-        jButtonPlus.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonPlus.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonPlus.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonPlus.setText("+");
-        jButtonPlus.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPlusActionPerformed(evt);
-            }
-        });
-
-        jButtonPow.setBackground(new java.awt.Color(100, 96, 96));
-        jButtonPow.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
-        jButtonPow.setForeground(new java.awt.Color(255, 255, 255));
-        jButtonPow.setText("pow");
-        jButtonPow.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                jButtonPowActionPerformed(evt);
             }
         });
 
@@ -244,6 +174,66 @@ public class JavaCalcMain extends javax.swing.JFrame {
             }
         });
 
+        jButtonClear.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonClear.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonClear.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonClear.setText("clear");
+        jButtonClear.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonClearActionPerformed(evt);
+            }
+        });
+
+        jButtonPlus.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonPlus.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonPlus.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonPlus.setText("+");
+        jButtonPlus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPlusActionPerformed(evt);
+            }
+        });
+
+        jButtonMinus.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonMinus.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonMinus.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMinus.setText("-");
+        jButtonMinus.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMinusActionPerformed(evt);
+            }
+        });
+
+        jButtonMultiplied.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonMultiplied.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonMultiplied.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonMultiplied.setText("x");
+        jButtonMultiplied.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonMultipliedActionPerformed(evt);
+            }
+        });
+
+        jButtonDivided.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonDivided.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonDivided.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonDivided.setText("/");
+        jButtonDivided.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonDividedActionPerformed(evt);
+            }
+        });
+
+        jButtonPow.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonPow.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonPow.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonPow.setText("pow");
+        jButtonPow.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPowActionPerformed(evt);
+            }
+        });
+
         jButtonSqrt.setBackground(new java.awt.Color(100, 96, 96));
         jButtonSqrt.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
         jButtonSqrt.setForeground(new java.awt.Color(255, 255, 255));
@@ -251,6 +241,16 @@ public class JavaCalcMain extends javax.swing.JFrame {
         jButtonSqrt.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButtonSqrtActionPerformed(evt);
+            }
+        });
+
+        jButtonPositiveNegative.setBackground(new java.awt.Color(100, 96, 96));
+        jButtonPositiveNegative.setFont(new java.awt.Font("Arial", 1, 15)); // NOI18N
+        jButtonPositiveNegative.setForeground(new java.awt.Color(255, 255, 255));
+        jButtonPositiveNegative.setText("+/-");
+        jButtonPositiveNegative.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButtonPositiveNegativeActionPerformed(evt);
             }
         });
 
@@ -271,18 +271,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(jTextDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(5, 5, 5)
-                                .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(5, 5, 5)
-                                .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(5, 5, 5)
-                                .addComponent(jButtonClear, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 0, Short.MAX_VALUE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButton4, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
@@ -291,14 +279,6 @@ public class JavaCalcMain extends javax.swing.JFrame {
                         .addComponent(jButton6, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
                         .addComponent(jButtonMultiplied, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(5, 5, 5)
-                        .addComponent(jButtonDivided, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jButtonPositiveNegative, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
@@ -314,7 +294,28 @@ public class JavaCalcMain extends javax.swing.JFrame {
                         .addGap(5, 5, 5)
                         .addComponent(jButtonSqrt, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(5, 5, 5)
-                        .addComponent(jButtonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addComponent(jButtonEquals, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
+                                .addComponent(jTextDisplay, javax.swing.GroupLayout.PREFERRED_SIZE, 335, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(5, 5, 5)
+                                    .addComponent(jButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(5, 5, 5)
+                                    .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addGap(5, 5, 5)
+                                    .addComponent(jButtonClear, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(jButton7, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5)
+                                .addComponent(jButton8, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5)
+                                .addComponent(jButton9, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(5, 5, 5)
+                                .addComponent(jButtonDivided, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addGap(0, 0, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(
