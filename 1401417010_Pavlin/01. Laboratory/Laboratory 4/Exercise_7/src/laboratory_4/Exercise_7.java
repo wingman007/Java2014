@@ -12,8 +12,7 @@ public class Exercise_7 {
 
     public static int randomWithRange(int min, int max) {
         
-        int range = (max - min) + 1;
-        return (int) (Math.random() * range) + min;
+        return (int) (Math.random() * (max - min + 1) + min);
     }
 
     public static int populateArray()[] {

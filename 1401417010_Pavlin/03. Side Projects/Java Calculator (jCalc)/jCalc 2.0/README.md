@@ -14,7 +14,7 @@ Java Calculator (jCalc)
 
 - Най-голямото число, което приема е с дължина 20 символа.
 
-#  Дизайн
+# Дизайн
 
 - **Java Calculator (jCalc) 2.0 - Idea**
 

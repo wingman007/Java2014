@@ -2,7 +2,7 @@ Java Calculator Bot (jCalcBot)
 ========
 [![CalcBot Demo](https://img.youtube.com/vi/VZaLEM3qk2U/hqdefault.jpg)](https://www.youtube.com/watch?v=VZaLEM3qk2U)
 
-#  Дизайн
+# Дизайн
 
 - **jCalcBot 1.0 - Idea**
 
