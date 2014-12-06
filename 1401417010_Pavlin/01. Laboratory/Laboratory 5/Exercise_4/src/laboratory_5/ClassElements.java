@@ -1,6 +1,7 @@
 package laboratory_5;
 
-public class ClassElements {
+// декларация на класа
+public class ClassElements { // тяло
     
     public String name; // пример за поле/променлива (field, variable) - в случая instance variable (implicit) (also member variable)
     
