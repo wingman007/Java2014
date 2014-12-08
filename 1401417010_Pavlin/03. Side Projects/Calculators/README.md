@@ -8,7 +8,7 @@ Calculators
 
 ![Java Calculator (jCalc) 1.0](http://img6.uploadhouse.com/fileuploads/20319/20319866a05d6dd832796d19762a357cc4928621.png)
 
-#TODO:
+#TODO
 
 **Java Calculator (jCalc) 2.0**
 
