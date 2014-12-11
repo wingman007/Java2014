@@ -39,9 +39,9 @@ public class PolyMain {
 
         polyCat.walkAround(); // return walkAround() from Cats
         
-        System.out.println(((Cats)polyCat).getFavToy()); // Direct casting
+        System.out.println(((Cats)polyCat).getFavToy()); // Downcasting
         
-        Cats tempCat = (Cats) polyCat;
-        System.out.println(tempCat.getFavToy()); // Casting with temp variable
+        Cats tempCat = (Cats)polyCat;
+        System.out.println(tempCat.getFavToy()); // Downcasting with temp variable
     }
 }
