@@ -1,4 +1,4 @@
-package coach;
+package poly_coach;
 
 public interface INoisable {
     

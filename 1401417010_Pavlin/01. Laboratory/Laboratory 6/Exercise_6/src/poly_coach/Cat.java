@@ -1,4 +1,4 @@
-package coach;
+package poly_coach;
 
 class Cat extends Animal implements INoisable {
     

@@ -1,4 +1,4 @@
-package coach;
+package poly_coach;
 
 class Animal implements INoisable {
     
