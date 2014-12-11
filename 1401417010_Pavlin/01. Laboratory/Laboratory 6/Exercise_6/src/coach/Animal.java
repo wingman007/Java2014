@@ -1,6 +1,6 @@
-package polymorphism;
+package coach;
 
-public class Animal implements INoisable {
+class Animal implements INoisable {
     
     @Override
     public void makeNoise() {

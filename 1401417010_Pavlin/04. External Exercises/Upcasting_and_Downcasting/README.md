@@ -24,7 +24,7 @@ Upcasting_and_Downcasting
   
 - Да се реализира downcasting от типа Camera, който е равен на полиморфната променлива.
 
-  - Може да се използва променливата от примера за полиморфизъм [ Machine machinePoly = new Camera(); ], която да се кастне (down) към Camera. [ (Camera)machinePoly ]
+  - Може да се използва променливата от примера за полиморфизъм Machine machinePoly = new Camera();, която да се кастне (down) към Camera. (Camera)machinePoly
   
 - Да се реализира downcasting от типа Camera, който е равен на променливата за инстанциране на обект от Machine с тип Machine. (първия пример за main)
 
