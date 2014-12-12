@@ -4,16 +4,17 @@ public class PolyMain {
 
     public static void main(String[] args) {
 
-        INoisable animalObject = new Animal();
-        Coach animalCoach = new Coach(animalObject);
-        animalCoach.makeSound();
+        INoisable animalObject = new Animal("Animal");
+        INoisable catObject = new Cat("Cat");
+        INoisable dogObject = new Dog("Dog");
+
+        Coach coach = new Coach(animalObject);
+        coach.makeSound();
         
-        INoisable catObject = new Cat();
-        Coach catCoach = new Coach(catObject);
-        catCoach.makeSound();
+        coach.setTrain(catObject);
+        coach.makeSound();
         
-        INoisable dogObject = new Dog();
-        Coach dogCoach = new Coach(dogObject);
-        dogCoach.makeSound();
+        coach.setTrain(dogObject);
+        coach.makeSound();  
     }
 }

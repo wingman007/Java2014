@@ -2,11 +2,18 @@ package poly_coach;
 
 public class Coach {
     
-    private final INoisable train;
-
+    private INoisable train;
+    
+    public INoisable getTrain() {
+        return train;
+    }
+    
+    public final void setTrain(INoisable train) {
+        this.train = train;   
+    }
+    
     public Coach(INoisable object) {
-        
-        train = object;
+        setTrain(object);
     }
     
     public void makeSound() {
