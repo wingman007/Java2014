@@ -3,7 +3,7 @@ package universal_driver;
 public class Truck extends Vehicle {
     
     public Truck(String brand) {
-        super(brand);
+        setBrand(brand);
     }
     
     @Override

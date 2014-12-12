@@ -14,10 +14,6 @@ public abstract class Vehicle implements IDrivable {
         this.brand = brand;
     }
     
-    public Vehicle(String brand) {
-        setBrand(brand);
-    }
-    
     @Override
     public void igniteEngine() {
         
