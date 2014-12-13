@@ -1,0 +1,17 @@
+Mon Dec 08 21:50:31 EET 2014 : Apache Derby Network Server - 10.10.1.3 - (1557168) started and ready to accept connections on port 1527
+----------------------------------------------------------------
+Mon Dec 08 21:50:31 EET 2014:
+Booting Derby version The Apache Software Foundation - Apache Derby - 10.10.1.3 - (1557168): instance a816c00e-014a-2b74-03f4-ffff886eeadf 
+on database directory F:\Dropbox\Java Workspace\GitHub\Java2014\1401417010_Pavlin\04. External Exercises\Java_DB_(Derby)\.netbeans-derby\Derby with class loader sun.misc.Launcher$AppClassLoader@1d44bcfa 
+Loaded from file:/C:/Program%20Files/Java/jdk1.8.0_25/db/lib/derby.jar
+java.vendor=Oracle Corporation
+java.runtime.version=1.8.0_25-b18
+user.dir=C:\Program Files\Java\jdk1.8.0_25\db
+os.name=Windows 7
+os.arch=amd64
+os.version=6.1
+derby.system.home=F:\Dropbox\Java Workspace\GitHub\Java2014\1401417010_Pavlin\04. External Exercises\Java_DB_(Derby)\.netbeans-derby
+Database Class Loader started - derby.database.classpath=''
+----------------------------------------------------------------
+Mon Dec 08 21:51:14 EET 2014: Shutting down Derby engine
+----------------------------------------------------------------

@@ -1,0 +1,16 @@
+package laboratory_4;
+
+public class Exercise_3 {
+
+    public static void main(String[] args) {
+
+        String arr[] = {"Ива","Ивелин","Марин","Георги"};
+
+        for(String elements: arr) {
+            
+            if(elements.endsWith("ин")) {
+                System.out.println(elements);
+            }            
+        }
+    }
+}
