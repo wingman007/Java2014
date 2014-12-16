@@ -1,4 +1,4 @@
-package geometric_figures;
+package figures_perimeter;
 
 public class Rectangle extends Perimeter {
 

@@ -1,4 +1,4 @@
-package geometric_figures;
+package figures_perimeter;
 
 import static java.lang.Math.PI;
 
@@ -16,16 +16,16 @@ public class Perimeter {
        
     public void calculateTriangle(int a, int b, int c) {
         
-        System.out.println("P = a + b + c => " + a + b + c); 
+        System.out.println("P = a + b + c => " + (a + b + c)); 
     }
     
     public void calculateRectangle(int a, int b) {
         
-        System.out.println("P = 2a + 2b => " + 2*a + 2*b);
+        System.out.println("P = 2a + 2b => " + (2*a + 2*b));
     }
     
     public void calculateCircle(int r) {
         
-        System.out.println("P = 2 * PI * r => " + 2 * PI * r);
+        System.out.println("P = 2 * PI * r => " + (2 * PI * r));
     }
 }

@@ -1,6 +1,6 @@
-package geometric_figures;
+package figures_perimeter;
 
-public class GeometricFiguresMain {
+public class FiguresPerimeterMain {
 
     public static void main(String[] args) {
         
