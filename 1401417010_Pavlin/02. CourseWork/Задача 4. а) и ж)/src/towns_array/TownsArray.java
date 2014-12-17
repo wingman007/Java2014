@@ -1,8 +1,8 @@
-package town_array;
+package towns_array;
 
 import java.util.Scanner;
 
-public class TownArray {
+public class TownsArray {
 
     static Scanner input = new Scanner(System.in, "windows-1251");
     
@@ -45,31 +45,38 @@ public class TownArray {
                 System.out.println("Излизане...");
                 break;
             default:
-                System.out.println("Въведете от 1 до 4!");
+                System.out.println("Въведете от 1 до 5!");
                 menu();
                 break;
         }  
     }
     
     public static void array() {
-
-        System.out.print("Въведи име на града: ");
-        for (int i = counter; i < arr.length; i++) {
+        
+        if(counter == arr.length) {
             
-            arr[i] = input.nextLine();
-            
-            System.out.print(arr[i] + " беше записан!\n");
-            break;
+            System.out.println("Масивът е пълен!");
         }
-        counter++;
+        
+        else {
+            System.out.print("Въведи име на града: ");
+            for (int i = counter; i < arr.length; i++) {
+
+                arr[i] = input.nextLine();
+
+                System.out.print(arr[i] + " беше записан!\n");
+                break;
+            }
+            counter++;
+        }
     }
     
-    public static String randTowns() {
+    public static String randTown() {
         
-        String[] randTown = {
+        String[] townsArray = {
             
         "Албена","Асеновград","Ахтопол","Балчик","Банско","Батак","Берковица","Благоевград","Ботевград","Брацигово","Бургас","Бяла Слатина","Варна","Велико Търново",
-        "Велинград","Видин","Враца","Габрово","Годеч","Горна Оряховица","Гоце Делчев","Девня","Димитровград","ДобричДряново","Дупница","Елена","Елин Пелин","Елхово",
+        "Велинград","Видин","Враца","Габрово","Годеч","Горна Оряховица","Гоце Делчев","Девня","Димитровград","Добрич","Дряново","Дупница","Елена","Елин Пелин","Елхово",
         "Етрополе","Златица","Златоград","Исперих","Ихтиман","Казанлък","Карлово","Козлодуй","Кубрат","Кърджали","Кюстендил","Ловеч","Лом","Мездра","Мелник","Монтана",
         "Несебър","Нова Загора","Нови пазар","Омуртаг","Оряхово","Павликени","Пазарджик","Панагюрище","Перник","Петрич","Пещера","Пирдоп","Плевен","Пловдив","Поморие",
         "Попово","Правец","Провадия","Първомай","Разград","Раковски","Русе","Сандански","Свиленград","Свищов","Севлиево","Силистра","Сливен","Смолян","Созопол","София",
@@ -77,23 +84,22 @@ public class TownArray {
         
         };
 
-        return randTown[(int)Math.floor(Math.random()*88)];
+        return townsArray[(int)Math.floor(Math.random()*townsArray.length)];
     }
     
     public static void autoArray() {
-
+        
         System.out.print("Масивът беше запълнен!\n");
         for (int i = counter; i < arr.length; i++) {
             
-            arr[i] = randTowns();
+            arr[i] = randTown();
         }
-        counter++;
+        counter = arr.length;
     }
     
     public static void printAll() {
         
         System.out.println("Въведените стойности в масива са:");
-        
         for (String elements : arr) {
             
             if (elements == null) {
@@ -107,7 +113,6 @@ public class TownArray {
     public static void printSpecial() {
         
         System.out.println("Специалните елементи са:");
-        
         for (String elements : arr) {
             
             if (elements == null) {

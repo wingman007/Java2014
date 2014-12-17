@@ -9,7 +9,7 @@ public class GeometricMean {
         int[] arr = new int[5];
         
         int br = 0;
-        double multiplied = 1.0;
+        int multiplied = 1;
         
         for (int elements : arr) {
             
@@ -31,14 +31,18 @@ public class GeometricMean {
         return (int)(Math.random() * (max - min + 1) + min);
     }
     
-    public static void averageGeometrically(int br, double multiplied) {
-        
-        if (br != 0) {
-            System.out.printf("\nБрой: " + br + " Средно геометрично: %.5f\n", pow(multiplied, 1.0 / br));
-        }
-        
-        else {
-            System.out.println("\nНяма числа, които принадлежат на интервала (6, 50]!");
+    public static void averageGeometrically(int br, int multiplied) {
+
+        switch (br) {
+            case 0: 
+                System.out.println("\nНяма числа, които принадлежат на интервала (6, 50]!");
+                break;
+            case 1:  
+                System.out.printf("\nБрой: " + br + " [" + multiplied +"] Няма средно геометрично.\n");
+                break;
+            default:
+                System.out.printf("\nБрой: " + br + " Средно геометрично: %.5f\n", pow(multiplied, 1.0 / br));
+               break;
         }
     }
 }
