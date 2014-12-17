@@ -102,7 +102,7 @@ public class CipherMain {
                 alphabet = alphabet.replace(";", "6");
                 alphabet = alphabet.replace("<", "7");
                 alphabet = alphabet.replace("=", "8");
-                alphabet = alphabet.replace(">", "8");
+                alphabet = alphabet.replace(">", "9");
                 
                 alphabet = alphabet.replace("?", ":");
                 alphabet = alphabet.replace("B", "=");
