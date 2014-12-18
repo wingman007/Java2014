@@ -2,30 +2,30 @@
 ========
 предложени от Кирил Иванов
 
-- **ArrayFigures**
+- **01. Batches**
 
-- **ArrayFiguresWithTrapezium**
+- **02. BookOwner**
 
-- **Batches**
+- **03. Point2D**
 
-- **BicycleSkis**
+- **04. RectangleCircle**
 
-- **BookOwner**
+- **05. Square**
 
-- **Goods**
+- **06. BicycleSkis**
 
-- **Plant**
+- **07. Goods**
 
-- **Point2D**
+- **08. RhombusIsoscelesTriangle**
 
-- **RectangleCircle**
+- **09. TrapeziumCircle**
 
-- **RhombusIsoscelesTriangle**
+- **10. V_ro_m**
 
-- **Square**
+- **11. ArrayFigures**
 
-- **TrapeziumCircle**
+- **12. ArrayFiguresWithTrapezium**
 
-- **V_ro_m**
+- **13. Plant**
 
 *Заданията са в папките на самите задачи.*
