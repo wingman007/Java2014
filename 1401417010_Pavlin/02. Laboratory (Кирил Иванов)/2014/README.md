@@ -24,8 +24,6 @@
 
 - **11. ArrayFigures**
 
-- **12. ArrayFiguresWithTrapezium**
-
-- **13. Plant**
+- **12. Plant**
 
 *Заданията са в папките на самите задачи.*

@@ -1,4 +1,4 @@
-Laboratory
+Laboratory (Стоян Черешаров)
 ========
 #[Java Last Season - Mind42 (MindMap)](http://mind42.com/mindmap/96b17203-6efb-4d6b-9862-510a25cafc88)
 
