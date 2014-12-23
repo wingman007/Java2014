@@ -1,12 +1,12 @@
-package files.write;
+package files;
 
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class WriteFIle {
+public class WriteFile {
     
-    public static void writeToFIle(String path, String textLine, Boolean appendToFile) throws IOException {
+    public static void writeToFile(String path, String textLine, Boolean appendToFile) throws IOException {
         
         FileWriter write = new FileWriter(path , appendToFile);
         

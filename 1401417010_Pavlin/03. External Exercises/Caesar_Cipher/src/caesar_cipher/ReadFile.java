@@ -12,17 +12,16 @@ public class ReadFile {
 
         String[] textData;
         
-        try (BufferedReader textReader = new BufferedReader(read)) {
+        BufferedReader textReader = new BufferedReader(read);
             
-            int numberOfLines = readLines(path);
-            
-            textData = new String[numberOfLines];
-            
-            for (int i=0; i < numberOfLines; i++) {
-                textData[i] = textReader.readLine();
-            }
+        int numberOfLines = readLines(path);
+
+        textData = new String[numberOfLines];
+
+        for (int i=0; i < numberOfLines; i++) {
+            textData[i] = textReader.readLine();
         }
-        
+
         return textData;
     }
     
@@ -32,13 +31,12 @@ public class ReadFile {
         
         int numberOfLines;
         
-        try (BufferedReader textReader = new BufferedReader(read)) {
+        BufferedReader textReader = new BufferedReader(read);
             
-            numberOfLines = 0;
-            
-            while (textReader.readLine() != null) {
-                numberOfLines++;
-            }
+        numberOfLines = 0;
+
+        while (textReader.readLine() != null) {
+            numberOfLines++;
         }
 
         return numberOfLines; 

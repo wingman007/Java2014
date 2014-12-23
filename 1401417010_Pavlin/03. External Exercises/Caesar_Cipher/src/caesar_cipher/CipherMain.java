@@ -122,7 +122,7 @@ public class CipherMain {
                 alphabet = alphabet.replace("S", "N");
                 alphabet = alphabet.replace("Z", "U");
 
-                // with hard override
+                // with hard replace
                 alphabet = alphabet.replace("ywzj", "true");
                 alphabet = alphabet.replace("kaqxj", "false"); 
                 alphabet = alphabet.replace("Ftwywan", "Fortran");

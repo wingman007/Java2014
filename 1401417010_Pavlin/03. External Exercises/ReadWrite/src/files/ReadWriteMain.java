@@ -1,7 +1,4 @@
-package files.main;
-
-import static files.read.ReadFile.readFromFile;
-import static files.write.WriteFIle.writeToFIle;
+package files;
 
 import java.io.IOException;
 
@@ -14,13 +11,13 @@ public class ReadWriteMain {
             
             String path = "src\\files\\THETA";
             
-            String[] result = readFromFile(path);
+            String[] result = ReadFile.readFromFile(path);
             
             for (String row : result) {
                 System.out.println(row);
             }
                 
-            writeToFIle(path, "THETA", true);
+            WriteFile.writeToFile(path, "THETA", true);
         }
         
         catch(IOException err) {
