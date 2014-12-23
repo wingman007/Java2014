@@ -6,7 +6,7 @@ public class GeometricMean {
 
     public static void main(String[] args) {
         
-        int[] arr = new int[5];
+        int[] arr = new int[10];
         
         int br = 0;
         int multiplied = 1;
@@ -26,12 +26,12 @@ public class GeometricMean {
         averageGeometrically(br, multiplied);
     }
     
-    public static int randomWithRange(int min, int max) {
+    private static int randomWithRange(int min, int max) {
         
         return (int)(Math.random() * (max - min + 1) + min);
     }
     
-    public static void averageGeometrically(int br, int multiplied) {
+    private static void averageGeometrically(int br, int multiplied) {
 
         switch (br) {
             case 0: 

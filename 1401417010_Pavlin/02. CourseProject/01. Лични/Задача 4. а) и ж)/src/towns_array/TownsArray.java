@@ -4,17 +4,18 @@ import java.util.Scanner;
 
 public class TownsArray {
 
-    static Scanner input = new Scanner(System.in, "windows-1251");
+    private static int counter = 0;
     
-    static String[] arr = new String[50];
+    protected static String[] arr = new String[50];
     
-    static int counter = 0;
+    protected static Scanner input = new Scanner(System.in, "windows-1251");
     
     public static void main(String[] args) {
+        
         menu();
     }
     
-    public static void menu() {
+    private static void menu() {
         
         System.out.println("МЕНЮ:");
         System.out.println("1. Въведи стойности в масива.");
@@ -51,7 +52,7 @@ public class TownsArray {
         }  
     }
     
-    public static void array() {
+    private static void array() {
         
         if(counter == arr.length) {
             
@@ -59,7 +60,9 @@ public class TownsArray {
         }
         
         else {
+            
             System.out.print("Въведи име на града: ");
+            
             for (int i = counter; i < arr.length; i++) {
 
                 arr[i] = input.nextLine();
@@ -71,7 +74,7 @@ public class TownsArray {
         }
     }
     
-    public static String randTown() {
+    private static String randTown() {
         
         String[] townsArray = {
             
@@ -87,9 +90,10 @@ public class TownsArray {
         return townsArray[(int)Math.floor(Math.random()*townsArray.length)];
     }
     
-    public static void autoArray() {
+    private static void autoArray() {
         
         System.out.print("Масивът беше запълнен!\n");
+        
         for (int i = counter; i < arr.length; i++) {
             
             arr[i] = randTown();
@@ -97,31 +101,54 @@ public class TownsArray {
         counter = arr.length;
     }
     
-    public static void printAll() {
+    private static void printAll() {
         
-        System.out.println("Въведените стойности в масива са:");
-        for (String elements : arr) {
+        if(arr[0] == null) {
             
-            if (elements == null) {
-                break;
+            System.out.println("Масивът е празен.");   
+        }
+        
+        else {
+            System.out.println("Въведените стойности в масива са:");
+
+            for (String elements : arr) {
+
+                if (elements == null) {
+                    break;
+                }
+
+                System.out.print("|" + elements + "|\n");
             }
-            
-            System.out.print("|" + elements + "|\n");
         }
     }
     
-    public static void printSpecial() {
+    private static void printSpecial() {
         
-        System.out.println("Специалните елементи са:");
+        int specialCounter = 0;
+        
+        if(arr[0] == null) {
+            
+            System.out.println("Масивът е празен.");   
+        }
+        
         for (String elements : arr) {
             
             if (elements == null) {
+                
                 break;
             }
             
             if (elements.matches("^([^реЕ]*[еЕ][^реЕ]*){2,4}$")) {
+
                 System.out.print("|" + elements + "|\n");
+                
+                specialCounter++;
             }
+        }
+        
+        if(arr[0] != null && specialCounter == 0) {
+            
+            System.out.println("Няма специални елементи.");
         }
     }
 }
