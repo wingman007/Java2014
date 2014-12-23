@@ -12,12 +12,12 @@ public class Exercise_1 {
         
         System.out.println("Да се генерира по случаен начин едномерен масив от цели числа принадлежащи на интервала [–100,100].\n");
         
-        getArray();
+        populateArray();
         
         menu();
     }
     
-    public static void getArray() {
+    public static void populateArray() {
         
         for (int i = 0; i < arr.length; i++) {
             
@@ -37,6 +37,7 @@ public class Exercise_1 {
         System.out.println("\n\nДа се намери:");
         System.out.println("а) сумата на тези елементи, чиято абсолютна стойност надхвърля 30;");
         System.out.println("б) произведението на ненулевите нечетни елементи;");
+        System.out.println("в) броят на елементите с четен индекс, които са в интервала [–30,30];");
         System.out.println("г) средно аритметично на елементите, които се делят на 5 без остатък;");
         System.out.println("д) средно квадратично на елементите, чиито пореден номер се дели на 3 без остатък (всяко 3–то);");
         System.out.println("е) средно геометрично на елементите, които принадлежат на интервала (6, 50];");

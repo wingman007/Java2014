@@ -14,7 +14,7 @@ public class Exercise_7 {
         
         int count = randomWithRange(1, 20);
 
-        int arr[] = new int[count];
+        int[] arr = new int[count];
         
         for(int val = 0 ; val < count; val++) {
             
