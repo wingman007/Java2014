@@ -1,7 +1,5 @@
 package geometric_mean;
 
-import static java.lang.Math.pow;
-
 public class GeometricMean {
 
     public static void main(String[] args) {
@@ -14,6 +12,7 @@ public class GeometricMean {
         for (int elements : arr) {
             
             elements = randomWithRange(-100, 100);
+            
             System.out.print("|" + elements + "|");
             
             if (elements > 6 && elements <= 50) {
@@ -41,7 +40,7 @@ public class GeometricMean {
                 System.out.printf("\nБрой: " + br + " [" + multiplied +"] Няма средно геометрично.\n");
                 break;
             default:
-                System.out.printf("\nБрой: " + br + " Средно геометрично: %.5f\n", pow(multiplied, 1.0 / br));
+                System.out.printf("\nБрой: " + br + " Средно геометрично: %.5f\n", Math.pow(multiplied, 1.0 / br));
                break;
         }
     }
