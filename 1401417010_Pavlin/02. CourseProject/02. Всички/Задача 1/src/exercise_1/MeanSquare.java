@@ -4,7 +4,7 @@ package exercise_1;
 
 public class MeanSquare extends Exercise_1 {
     
-    public static void meanSquare() {
+    protected static void meanSquare() {
         
         int number = 0;
         int sum = 0;

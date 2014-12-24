@@ -17,22 +17,22 @@ public class Exercise_1 {
         menu();
     }
     
-    public static void populateArray() {
+    private static void populateArray() {
         
-        for (int i = 0; i < arr.length; i++) {
+        for(int i = 0; i < arr.length; i++) {
             
             arr[i] = randomWithRange(-100, 100);
             
             System.out.print("|" + arr[i] + "|");
         }
     }
-    
-    public static int randomWithRange(int min, int max) {
+
+    private static int randomWithRange(int min, int max) {
         
         return (int)(Math.random() * (max - min + 1) + min);
     }
     
-    public static void menu() {
+    private static void menu() {
 
         System.out.println("\n\nДа се намери:");
         System.out.println("а) сумата на тези елементи, чиято абсолютна стойност надхвърля 30;");

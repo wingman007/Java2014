@@ -4,7 +4,7 @@ package exercise_1;
 
 public class EvenIndex extends Exercise_1 {
       
-    public static void evenIndex() {
+    protected static void evenIndex() {
         
         int number = 0;
         

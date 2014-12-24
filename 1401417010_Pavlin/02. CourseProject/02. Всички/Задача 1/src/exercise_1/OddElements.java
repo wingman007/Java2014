@@ -4,13 +4,13 @@ package exercise_1;
 
 public class OddElements extends Exercise_1 {
 
-    public static void oddElements() {
+    protected static void oddElements() {
         
         int multiplied = 1;
         
         for(int elements : arr) {
             
-            if(elements%2 !=0) {
+            if(elements % 2 != 0 && elements != 0) {
 
                 multiplied *= elements;
             }

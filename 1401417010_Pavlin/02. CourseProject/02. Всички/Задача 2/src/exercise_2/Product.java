@@ -4,40 +4,65 @@ package exercise_2;
 
 public class Product extends Exercise_2 {
     
-    public static void product() {
+    protected static void product() {
         
         double productArray1 = 1;
         
-        for(int i = 0; i < arr1.length; i++) {
+        for(int elements : arr1) {
             
-            if(arr1[i] > 0 && arr1[i]%2 != 0) {
+            if(elements > 0 && elements % 2 != 0) { // Средногеометрично не може да се смята с отрицателни числа
                 
-                productArray1+= arr1[i];
-            }   
+                productArray1 += elements;
+            }    
         }
-        System.out.println("Произведението на ненулевите нечетни елементи на arr1 е: " + productArray1);
+        
+        if (productArray1 == 1) {
+            
+            System.out.println("В arr1 няма нечетни елементи.");
+        }
+        
+        else {
+            System.out.println("Произведението на ненулевите нечетни елементи на arr3 е: " + productArray1);
+        }
         
         double productArray2 = 1;
         
-        for(int i = 0; i < arr2.length; i++) {
+        for(int elements : arr2) {
             
-            if(arr2[i] > 0 && arr2[i]%2 != 0) {
-                productArray2+= arr2[i];
+            if(elements > 0 && elements % 2 != 0) {
+                
+                productArray2 += elements;
             }
         }
-        System.out.println("Произведението на ненулевите нечетни елементи на arr2 е: " + productArray2);
+        
+        if (productArray2 == 1) {
+            
+            System.out.println("В arr2 няма нечетни елементи.");
+        }
+        
+        else {
+            System.out.println("Произведението на ненулевите нечетни елементи на arr3 е: " + productArray2);
+        }
         
         double productArray3 = 1;
         
-        for(int i = 0; i < arr3.length; i++) {
+        for(int elements : arr3) {
             
-            if(arr3[i] > 0 && arr3[i]%2 != 0) {
-                productArray3+= arr3[i];
+            if(elements > 0 && elements % 2 != 0) {
+                
+                productArray3 += elements;
             }
         }
-        System.out.println("Произведението на ненулевите нечетни елементи на arr3 е: " + productArray3);
         
-        double productArrays = productArray1 * productArray2 * productArray3;
-        System.out.printf("Средногеометричното на трите произведения е: %.5f\n", (Math.pow(productArrays, 1.0/3)));
+        if (productArray3 == 1) {
+            
+            System.out.println("В arr3 няма нечетни елементи.");
+        }
+        
+        else {
+            System.out.println("Произведението на ненулевите нечетни елементи на arr3 е: " + productArray3);
+        }
+        
+        System.out.printf("Средногеометричното на трите произведения е: %.5f\n", (Math.pow((productArray1 * productArray2 * productArray3), 1.0/3)));
     }
 }

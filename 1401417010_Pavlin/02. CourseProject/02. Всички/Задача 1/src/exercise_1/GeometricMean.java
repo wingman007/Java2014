@@ -4,16 +4,17 @@ package exercise_1;
 
 public class GeometricMean extends Exercise_1 {
 
-    public static void geometricMean() {
+    protected static void geometricMean() {
         
         int number = 0;
         int multiplied = 1;
         
         for(int elements : arr) {
+            
             if (elements > 6 && elements <= 50) {
-
-                number++;
+                
                 multiplied = multiplied * elements;
+                number++;
             }
         }
         

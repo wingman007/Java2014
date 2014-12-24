@@ -5,16 +5,37 @@ import java.util.Scanner;
 public class TownsArray {
 
     private static int counter = 0;
-    
-    protected static String[] arr = new String[50];
-    
+
     protected static Scanner input = new Scanner(System.in, "windows-1251");
     
+    protected static String[] arr = new String[initializeArray()]; // първо инициализира масива с initializeArray() и тогава зарежда main()
+
     public static void main(String[] args) {
         
         menu();
     }
-    
+
+    private static int initializeArray() {
+        
+        System.out.print("Въведи големината на масива (макс 50): ");
+        
+        int size = input.nextInt();
+        
+        if(size > 0 && size <= 50) {
+            
+            System.out.println("Големината на масива е зададена на: " + size);
+        }
+        
+        else {
+            
+            System.out.println("Въведохте грешно число.");
+            size = (int)Math.ceil(Math.random()*50);
+            System.out.println("Задавам автоматична големина на масива: " + size);
+        }
+
+        return size;
+    }
+
     private static void menu() {
         
         System.out.println("МЕНЮ:");
@@ -25,24 +46,24 @@ public class TownsArray {
         System.out.println("5. Изход от програмата.");
         System.out.print("Въведи избора си: ");
         
-        switch (input.nextLine()) {
-            case "1":
-                array();
+        switch (input.nextInt()) {
+            case 1:
+                populateArray();
                 menu();
                 break;
-            case "2":
-                autoArray();
+            case 2:
+                autoPopulateArray();
                 menu();
                 break;
-            case "3":
-                printAll();
+            case 3:
+                printArray();
                 menu();
                 break;
-            case "4":
-                printSpecial();
+            case 4:
+                printSpecialArray();
                 menu();
                 break;
-            case "5":
+            case 5:
                 System.out.println("Излизане...");
                 break;
             default:
@@ -51,8 +72,8 @@ public class TownsArray {
                 break;
         }  
     }
-    
-    private static void array() {
+
+    private static void populateArray() {
         
         if(counter == arr.length) {
             
@@ -90,7 +111,7 @@ public class TownsArray {
         return townsArray[(int)Math.floor(Math.random()*townsArray.length)];
     }
     
-    private static void autoArray() {
+    private static void autoPopulateArray() {
         
         System.out.print("Масивът беше запълнен!\n");
         
@@ -101,7 +122,7 @@ public class TownsArray {
         counter = arr.length;
     }
     
-    private static void printAll() {
+    private static void printArray() {
         
         if(arr[0] == null) {
             
@@ -122,7 +143,7 @@ public class TownsArray {
         }
     }
     
-    private static void printSpecial() {
+    private static void printSpecialArray() {
         
         int specialCounter = 0;
         

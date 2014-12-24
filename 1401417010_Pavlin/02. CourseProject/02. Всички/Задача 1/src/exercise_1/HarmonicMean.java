@@ -4,14 +4,15 @@ package exercise_1;
 
 public class HarmonicMean extends Exercise_1 {
     
-    public static void harmonicMean() {
+    protected static void harmonicMean() {
         
         double sum = 0;
         int number = 0;
         
         for(double elements : arr) {
             
-            if (((elements > -6 && elements <= 50) == false) && elements > 50) {
+            if (((elements > -6 && elements <= 50) == false) && elements > 0) {
+                
                 sum += (1/elements);
                 number++;
             }

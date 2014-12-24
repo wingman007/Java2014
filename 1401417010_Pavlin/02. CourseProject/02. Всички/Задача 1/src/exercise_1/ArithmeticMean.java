@@ -4,15 +4,16 @@ package exercise_1;
 
 public class ArithmeticMean extends Exercise_1 {
 
-    public static void arithmeticMean() {
+    protected static void arithmeticMean() {
         
         int sum = 0;
         int number = 0;
         
-        for(int i = 0; i < arr.length; i++) {
+        for(int elements : arr) {
             
-            if(arr[i] % 5 == 0) {
-                sum += arr[i];
+            if(elements % 5 == 0) {
+                
+                sum += elements;
                 number++;
             }
         }
