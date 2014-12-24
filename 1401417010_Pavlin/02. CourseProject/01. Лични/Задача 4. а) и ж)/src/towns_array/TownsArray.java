@@ -161,7 +161,7 @@ public class TownsArray {
             
             if (elements.matches("^([^реЕ]*[еЕ][^реЕ]*){2,4}$")) {
 
-                System.out.print("|" + elements + "|\n");
+                System.out.println("|" + elements + "|");
                 
                 specialCounter++;
             }
