@@ -4,29 +4,21 @@ import java.util.Scanner;
 
 public class Exercise_2 {
     
+    static int[] arr1 = populateArray();
+    static int[] arr2 = populateArray();
+    static int[] arr3 = populateArray();
+    
     protected static Scanner input = new Scanner(System.in, "windows-1251");
     
     public static void main(String[] args) {
         
         System.out.println("Да се генерират по случаен начин 3 едномерни масива от цели числа принадлежащи на интервала [–100,100], всеки от тях с до 20 на брой елементи.\n");
-                   
-        initializeArray();
+
+        printArray(arr1);
+        printArray(arr2);
+        printArray(arr3);
         
         menu();
-    }
-    
-    public static void initializeArray() {
-        for(int i = 0; i<3; i++) {
-            
-            int[] arr = populateArray();
-            
-            for(int elements : arr) {
-                
-                System.out.print("|" + elements + "|");
-            }
-            
-            System.out.println("");
-        }
     }
     
     public static int[] populateArray() {
@@ -47,7 +39,17 @@ public class Exercise_2 {
         
         return (int) (Math.random() * (max - min + 1) + min);
     }
+    
+    public static void printArray(int[] arr) {
+        
+        for(int elements : arr) {
 
+            System.out.print("|" + elements + "|");
+        }
+
+        System.out.println("");
+    }
+    
     public static void menu() {
 
         System.out.println("\nДа се намерят и изведат:");
@@ -63,31 +65,31 @@ public class Exercise_2 {
         
         switch (input.nextLine()) {
             case "а":
-                //AbsoluteValue.absoluteValue();
+                Amount.amount();
                 menu();
                 break;
             case "б":
-                //OddElements.oddElements();
+                Product.product();
                 menu();
                 break;
             case "в":
-                //EvenIndex.evenIndex();
+                Number.number();
                 menu();
                 break;
             case "г":
-                //Average.average();
+                ArithmeticMean.arithmeticMean();
                 menu();
                 break;
             case "д":
-                //MeanSquare.meanSquare();
+                MeanSquare.meanSquare();
                 menu();
                 break;
             case "е":
-                //GeometricMean.geometricMean();
+                GeometricMean.geometricMean();
                 menu();
                 break;
             case "ж":
-                //HarmonicMean.harmonicMean();
+                HarmonicMean.harmonicMean();
                 menu();
                 break;
             case "изход":

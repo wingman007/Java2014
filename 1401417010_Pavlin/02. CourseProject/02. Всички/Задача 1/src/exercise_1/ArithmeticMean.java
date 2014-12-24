@@ -2,9 +2,9 @@ package exercise_1;
 
 // подточка г)
 
-public class Average extends Exercise_1 {
+public class ArithmeticMean extends Exercise_1 {
 
-    public static void average() {
+    public static void arithmeticMean() {
         
         int sum = 0;
         int number = 0;

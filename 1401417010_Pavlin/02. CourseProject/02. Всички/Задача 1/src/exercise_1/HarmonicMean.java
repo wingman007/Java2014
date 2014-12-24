@@ -11,7 +11,7 @@ public class HarmonicMean extends Exercise_1 {
         
         for(double elements : arr) {
             
-            if (elements > -6 && elements <= 50 && elements != 0.0) {
+            if (((elements > -6 && elements <= 50) == false) && elements > 50) {
                 sum += (1/elements);
                 number++;
             }
@@ -19,7 +19,7 @@ public class HarmonicMean extends Exercise_1 {
         
         switch (number) {
             case 0: 
-                System.out.print("\nНяма числа, които принадлежат на интервала (-6, 50]!");
+                System.out.print("\nНяма числа, които не принадлежат на интервала (-6, 50]!");
                 break;
             case 1:  
                 System.out.printf("\nБрой: " + number + " Няма средно хармонично.");            

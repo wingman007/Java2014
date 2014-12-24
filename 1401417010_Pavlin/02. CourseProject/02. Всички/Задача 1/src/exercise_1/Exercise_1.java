@@ -59,7 +59,7 @@ public class Exercise_1 {
                 menu();
                 break;
             case "г":
-                Average.average();
+                ArithmeticMean.arithmeticMean();
                 menu();
                 break;
             case "д":
