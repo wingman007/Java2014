@@ -1,6 +1,5 @@
 package exercise_4;
 
-
 import java.util.Scanner;
 
 public class Exercise_4 {
@@ -54,7 +53,7 @@ public class Exercise_4 {
                 menu();
                 break;
             case "е":
-                //RepeatO.repeatO();
+                RepeatO.repeatO();
                 menu();
                 break;
             case "ж":
@@ -70,7 +69,7 @@ public class Exercise_4 {
                 menu();
                 break;
             case "й":
-                //Encryption.encryption();
+                CodingDecoding.choice();
                 menu();
                 break;
             case "к":

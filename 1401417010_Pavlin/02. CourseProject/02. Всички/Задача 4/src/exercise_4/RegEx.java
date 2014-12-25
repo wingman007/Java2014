@@ -6,7 +6,7 @@ public class RegEx extends Exercise_4 {
         
         for(String elements : arr) {
             
-            if (elements.matches("^([^реЕ]*[еЕ][^реЕ]*){2,4}$")) {
+            if(elements.matches("^([^реЕ]*[еЕ][^реЕ]*){2,4}$")) { // like a boss
 
                 System.out.println(elements);
             }
