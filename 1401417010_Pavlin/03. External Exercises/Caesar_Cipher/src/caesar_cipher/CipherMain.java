@@ -12,11 +12,30 @@ public class CipherMain {
             
             String[] result = ReadFile.readFromFile(path);
             
+            // method 1 with -5 shift
+            
             for (String row : result) {
+
+                String decodedElement = "";
+
+                for(int i = 0; i < row.length(); i++) {
+
+                    decodedElement += (char)(row.charAt(i) - 5);
+                    //decodedElement = decodedElement.concat(Character.toString((char)(elements.charAt(i) - 5)));
+                }
+                
+                System.out.println(decodedElement);
+            }
+            
+            System.out.println("------------------------------------------------------------------------------");
+            
+            // method 2 with hard replace
+            
+            for (String rowReplace : result) {
                 
                 String alphabet;
                 
-                alphabet = row.replace("е", "а");
+                alphabet = rowReplace.replace("е", "а");
                 alphabet = alphabet.replace("ж", "б");
                 alphabet = alphabet.replace("з", "в");
                 alphabet = alphabet.replace("и", "г");
