@@ -4,18 +4,18 @@ public class ChessMain {
 
     public static void main(String[] args) {
 
-        ChessOfficer chessOfficerWhite = new ChessOfficer("d4", "бял");
+        ChessBishop chessBishopWhite = new ChessBishop("d4", "бял");
         
-        chessOfficerWhite.intro();
+        chessBishopWhite.intro();
         
         
-        ChessOfficer chessOfficerBlack = new ChessOfficer(InputValidation.inputValidation(), "черен");
+        ChessBishop chessBishopBlack = new ChessBishop(InputValidation.inputValidation(), "черен");
         
-        chessOfficerBlack.intro();
+        chessBishopBlack.intro();
         
-        chessOfficerWhite.takeWithOneMove(chessOfficerBlack);
-        chessOfficerBlack.takeWithOneMove(chessOfficerWhite);
+        chessBishopWhite.takeWithOneMove(chessBishopBlack);
+        chessBishopBlack.takeWithOneMove(chessBishopWhite);
         
-        ChessBoard.printBoard(chessOfficerWhite, chessOfficerBlack);
+        ChessBoard.printBoard(chessBishopWhite, chessBishopBlack);
     }
 }

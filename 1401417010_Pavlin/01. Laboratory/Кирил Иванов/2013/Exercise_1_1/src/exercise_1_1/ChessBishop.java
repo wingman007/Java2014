@@ -1,6 +1,6 @@
 package exercise_1_1;
 
-public class ChessOfficer extends ChessPosition {
+public class ChessBishop extends ChessPosition {
     
     private String type;
     
@@ -12,7 +12,7 @@ public class ChessOfficer extends ChessPosition {
         this.type = type;
     }
     
-    protected ChessOfficer(String position, String type) {
+    protected ChessBishop(String position, String type) {
         
         setPosition(position);
         setType(type);
@@ -34,29 +34,29 @@ public class ChessOfficer extends ChessPosition {
         
         for(int i = 0; i < 7; i++) {
             
-            char rightUpLetter = (char)((enemyPosition.charAt(0) + count));
-            char rightUpNumber = (char)((enemyPosition.charAt(1) + count));
+            char rightUpLetter = (char)((position.charAt(0) + count));
+            char rightUpNumber = (char)((position.charAt(1) + count));
             
-            String rightUpString = Character.toString(rightUpLetter).concat(Character.toString(rightUpNumber));
+            String rightUpPath = Character.toString(rightUpLetter).concat(Character.toString(rightUpNumber));
 
-            char rightDownLetter = (char)((enemyPosition.charAt(0) + count));
-            char rightDownNumber = (char)((enemyPosition.charAt(1) - count));
+            char rightDownLetter = (char)((position.charAt(0) + count));
+            char rightDownNumber = (char)((position.charAt(1) - count));
 
-            String rightDownString = Character.toString(rightDownLetter).concat(Character.toString(rightDownNumber));
+            String rightDownPath = Character.toString(rightDownLetter).concat(Character.toString(rightDownNumber));
             
-            char leftUpLetter = (char)((enemyPosition.charAt(0) - count));
-            char leftUpNumber = (char)((enemyPosition.charAt(1) + count));
+            char leftUpLetter = (char)((position.charAt(0) - count));
+            char leftUpNumber = (char)((position.charAt(1) + count));
             
-            String leftUpString = Character.toString(leftUpLetter).concat(Character.toString(leftUpNumber));
+            String leftUpPath = Character.toString(leftUpLetter).concat(Character.toString(leftUpNumber));
             
-            char leftDownLetter = (char)((enemyPosition.charAt(0) - count));
-            char leftDownNumber = (char)((enemyPosition.charAt(1) - count));
+            char leftDownLetter = (char)((position.charAt(0) - count));
+            char leftDownNumber = (char)((position.charAt(1) - count));
             
-            String leftDownString = Character.toString(leftDownLetter).concat(Character.toString(leftDownNumber));
+            String leftDownPath = Character.toString(leftDownLetter).concat(Character.toString(leftDownNumber));
             
             count++;
             
-            if(position.equals(rightUpString) || position.equals(rightDownString) || position.equals(leftUpString) || position.equals(leftDownString)) {
+            if(rightUpPath.equals(enemyPosition) || rightDownPath.equals(enemyPosition) || leftUpPath.equals(enemyPosition) || leftDownPath.equals(enemyPosition)) {
             
                 takeWithOneMove = true;
                 break;
