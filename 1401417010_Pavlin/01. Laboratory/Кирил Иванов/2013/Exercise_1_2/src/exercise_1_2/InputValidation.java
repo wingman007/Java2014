@@ -3,12 +3,12 @@ package exercise_1_2;
 import java.util.Scanner;
 
 public class InputValidation {
-
-    private static final Scanner input = new Scanner(System.in, "windows-1251");
     
     protected static String inputValidation() {
         
         String figurePosition;
+        
+        Scanner input = new Scanner(System.in, "windows-1251");
         
         while (true) {
             
