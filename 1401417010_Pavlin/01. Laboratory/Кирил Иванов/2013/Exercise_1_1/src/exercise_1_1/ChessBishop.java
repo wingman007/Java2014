@@ -23,12 +23,12 @@ public class ChessBishop extends ChessPosition {
         System.out.println("Офицер " + getType() + " се намира на " + checkSquareColor() + " квадрат.");
     }
     
-    protected void takeWithOneMove(ChessPosition enemyChessOfficer) {
+    protected void takeWithOneMove(ChessPosition enemyFigure) {
 
         boolean takeWithOneMove = false;
         
         String position = getPosition();
-        String enemyPosition = enemyChessOfficer.getPosition();
+        String enemyPosition = enemyFigure.getPosition();
         
         int count = 1;
         
