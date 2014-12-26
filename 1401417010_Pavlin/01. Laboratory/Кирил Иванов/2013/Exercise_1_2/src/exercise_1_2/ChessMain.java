@@ -8,7 +8,7 @@ public class ChessMain {
 
         chessKnightWhite.intro();
 
-        ChessKnight chessKnightBlack = new ChessKnight(InputValidation.inputValidation(), "черен");
+        ChessKnight chessKnightBlack = new ChessKnight(Input.validation(), "черен");
 
         chessKnightBlack.intro();
 

@@ -8,8 +8,7 @@ public class ChessMain {
         
         chessBishopWhite.intro();
         
-        
-        ChessBishop chessBishopBlack = new ChessBishop(InputValidation.inputValidation(), "черен");
+        ChessBishop chessBishopBlack = new ChessBishop(Input.validation(), "черен");
         
         chessBishopBlack.intro();
         

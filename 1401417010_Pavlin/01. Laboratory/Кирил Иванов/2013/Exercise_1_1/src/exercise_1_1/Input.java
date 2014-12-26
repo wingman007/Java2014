@@ -1,26 +1,24 @@
-package exercise_1_2;
+package exercise_1_1;
 
 import java.util.Scanner;
 
-public class InputValidation {
+public class Input {
     
-    protected static String inputValidation() {
+    protected static String validation() {
         
-        String figurePosition;
+        String validInput;
         
         Scanner input = new Scanner(System.in, "windows-1251");
         
         while (true) {
             
-            System.out.print("\nВъведете позицията на черния кон: ");
+            System.out.print("\nВъведете позицията на черния офицер: ");
 
-            String validInput = input.next();
+            validInput = input.next();
 
             if(validInput.length() == 2 && validInput.substring(0, 1).matches("[a-h]") && validInput.substring(1, 2).matches("[1-8]") ) {
 
-                figurePosition = validInput;
-
-                System.out.println("\nПозицията " + figurePosition + " е валидна.\n");
+                System.out.println("\nПозицията " + validInput + " е валидна.\n");
                 break;
             }
 
@@ -30,6 +28,6 @@ public class InputValidation {
             }
         }
         
-        return figurePosition;
+        return validInput;
     }
 }
