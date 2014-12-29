@@ -6,7 +6,7 @@ import java.util.Date;
 
 public class Comparison {
         
-    public void whoIsYounger(Person par1, Person par2){
+    protected void whoIsYounger(Person par1, Person par2){
         
         try {
 

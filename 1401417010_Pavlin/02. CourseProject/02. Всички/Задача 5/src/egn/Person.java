@@ -4,7 +4,7 @@ import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Scanner;
 
-public final class Person {
+public class Person {
 
     private String EGN;
     private String name;
@@ -12,9 +12,9 @@ public final class Person {
     
     private static final Scanner listener = new Scanner(System.in, "windows-1251");
 
-    Person() {
+    protected Person() {
 
-        System.out.println("Please enter your name: ");
+        System.out.print("Please enter your name: ");
         String fName = listener.nextLine();
         
         name = nameFormat(fName);
@@ -42,7 +42,7 @@ public final class Person {
         }
     }
 
-    public String nameFormat(String name) {
+    protected final String nameFormat(String name) {
         
         String formatedName = name.toLowerCase();
         formatedName = formatedName.trim();
@@ -50,31 +50,27 @@ public final class Person {
         return formatedName;
     }
     
-    public void setFormatedDate(String formatedDate) {
-        this.formatedDate = formatedDate;
-    }
-
-    public String getFormatedDate() {
-        return formatedDate;
-    }
-
-    public void setEGN(String EGN) {
-        this.EGN = EGN;
-    }
-
-    public String getEGN() {
+    protected String getEGN() {
         return EGN;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
-
-    public void setName(String name) {
-        this.name = name;
+    
+    protected String getFormatedDate() {
+        return formatedDate;
     }
 
-    public boolean eval(String EGN) {
+    protected final void setEGN(String EGN) {
+        this.EGN = EGN;
+    }
+
+    protected final void setName(String name) {
+        this.name = name;
+    }
+    
+    protected final boolean eval(String EGN) {
         
         boolean eval = true;
 
@@ -105,8 +101,12 @@ public final class Person {
         setFormatedDate(fDate);
         return eval;
     }
-
-    public boolean isValidDate(String inDate) {
+    
+    protected void setFormatedDate(String formatedDate) {
+        this.formatedDate = formatedDate;
+    }
+    
+    protected boolean isValidDate(String inDate) {
         
         SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         dateFormat.setLenient(false);
@@ -122,7 +122,7 @@ public final class Person {
         return true;
     }
 
-    public int[] getDate(String EGN) {
+    protected int[] getDate(String EGN) {
 
         int[] date = new int[3];
         int start = 0;
@@ -136,13 +136,13 @@ public final class Person {
         return date;
     }
     
-    public int getIntVal(String someNumber, int start, int end) {
+    protected int getIntVal(String someNumber, int start, int end) {
 
         int val = Integer.parseInt(someNumber.substring(start, (end + 1)));
         return val;
     }
 
-    public String formatDate(int[] date) {
+    protected String formatDate(int[] date) {
 
         if (date[1] > 0 && date[1] < 13) {
             date[0] += 1900;
@@ -163,7 +163,7 @@ public final class Person {
         return formatedDate;
     }
 
-    public boolean controlNum(String EGN) {
+    protected boolean controlNum(String EGN) {
         
         boolean eval = true;
 
