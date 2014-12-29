@@ -14,7 +14,7 @@ public class Input {
 
             System.out.print("Въведете название на плодовете: ");
 
-            validInput = input.nextLine();
+            validInput = input.next();
             
             if(validInput.matches("[А-Яа-яA-Za-z]*")) {
                 
