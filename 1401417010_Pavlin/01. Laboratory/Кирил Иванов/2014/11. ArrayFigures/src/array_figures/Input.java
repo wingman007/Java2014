@@ -59,7 +59,7 @@ public class Input {
         return validInput;
     }
     
-    protected static String validationDouble() { 
+    protected static String validationString() { 
         
         String validInput;
 

@@ -1,7 +1,5 @@
 package array_figures;
 
-import java.util.Arrays;
-
 public class ArrayFiguresMain {
 
     public static void main(String[] args) {
@@ -18,7 +16,7 @@ public class ArrayFiguresMain {
                 
                 case "кръг":
                     System.out.println("Изисква се радиусът \"r\" на кръга.");
-                    elements[1] = Input.validationDouble();
+                    elements[1] = Input.validationString();
 
                     Figures circle = new Circle(Double.parseDouble(elements[1]));
                     elements[3] = Double.toString(circle.calculateSurface());
@@ -26,8 +24,8 @@ public class ArrayFiguresMain {
                     
                 case "правоъгълник":
                     System.out.println("Изисква се страна \"a\" и страна \"b\" на правоъгълника.");
-                    elements[1] = Input.validationDouble();
-                    elements[2] = Input.validationDouble();
+                    elements[1] = Input.validationString();
+                    elements[2] = Input.validationString();
 
                     Figures rectangle = new Rectangle(Double.parseDouble(elements[1]), Double.parseDouble(elements[2]));
                     elements[3] = Double.toString(rectangle.calculateSurface());
@@ -35,8 +33,8 @@ public class ArrayFiguresMain {
                     
                 case "триъгълник":
                     System.out.println("Изисква се страна \"a\" и височината към нея \"h\" на триъгълника.");
-                    elements[1] = Input.validationDouble();
-                    elements[2] = Input.validationDouble();
+                    elements[1] = Input.validationString();
+                    elements[2] = Input.validationString();
 
                     Figures triangle = new Triangle(Double.parseDouble(elements[1]), Double.parseDouble(elements[2]));
                     elements[3] = Double.toString(triangle.calculateSurface());
@@ -79,7 +77,7 @@ public class ArrayFiguresMain {
         
         System.out.println("\nДанните на копието са:");
         
-        String[][] arrCopy = Arrays.copyOfRange(arr, index, index+1);
+        String[][] arrCopy = java.util.Arrays.copyOfRange(arr, index, index+1);
         
         for (String[] elements : arrCopy) {
             
