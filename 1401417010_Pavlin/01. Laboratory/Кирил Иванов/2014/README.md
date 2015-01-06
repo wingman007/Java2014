@@ -26,4 +26,12 @@
 
 - **12. Plant**
 
+- **13. TreeBook**
+
+- **14. Hunters**
+
+- **15. OwnerHierarchy**
+
+- **16. OwnerInterface**
+
 *Заданията са в папките на самите задачи.*
