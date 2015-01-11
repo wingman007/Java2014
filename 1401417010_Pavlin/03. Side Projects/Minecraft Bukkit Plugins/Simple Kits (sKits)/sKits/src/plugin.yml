@@ -1,9 +1,0 @@
-name: sKits
-main: skits.main.SimpleKitsMain
-version: 1
-website: 
-author: FEarBG
-commands: 
-    kit:
-    soup:
-    spawn:
